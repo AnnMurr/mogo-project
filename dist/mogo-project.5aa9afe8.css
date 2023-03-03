@@ -121,7 +121,7 @@ body .container .divider {
   display: block;
   margin: 0 auto;
 }
-.banner {
+.banner__background {
   padding: 177px 0 116px 0;
   position: absolute;
   top: 0;
@@ -133,7 +133,7 @@ body .container .divider {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.banner::before {
+.banner__background::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -234,6 +234,26 @@ body .container .divider {
   line-height: 21px;
   text-transform: uppercase;
   padding: 0 0 5px 5px;
+}
+.about__wrapper {
+  padding: 42px 0;
+}
+.about__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.about__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.about__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 
