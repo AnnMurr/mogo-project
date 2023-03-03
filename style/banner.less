@@ -1,26 +1,26 @@
 .banner {
-  &__background{
-  padding: 177px 0 116px 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-height: 1024px;
-  z-index: -1;
-  background: url('@{img}desktop.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: @gradient-backgroud-color;
+  &__background {
+    padding: 177px 0 116px 0;
+    position: relative;
     top: 0;
+    width: 100%;
+    max-height: 1024px;
+    z-index: -1;
+    background: url("@{img}desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      background: @gradient-backgroud-color;
+      top: 0;
+    }
   }
-}
 
   &__wrapper {
     text-align: center;
@@ -75,59 +75,58 @@
       outline: none;
     }
   }
-}
+  .scroll {
+    position: sticky;
+    top: 0;
 
-.scroll {
-  position: sticky;
-  top: 0;
+    &__wrapper {
+      padding-top: 110px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-  &__wrapper {
-    padding-top: 110px;
-    display: flex;
-    justify-content: space-between;
-  }
+    &__slide {
+      color: @Citrine-White-color;
 
-  &__slide {
-    color: @Citrine-White-color;
+      &_active {
+        color: @white-color;
 
-    &_active {
-      color: @white-color;
-
-      .scroll__line::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 70px;
-        border-bottom: 4px solid @froly-color;
+        .scroll__line::after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 70px;
+          border-bottom: 4px solid @froly-color;
+        }
       }
     }
-  }
 
-  &__line {
-    width: 270px;
-    border-bottom: 4px solid;
-    display: block;
-    position: relative;
-  }
-
-  &__text {
-    padding: 21.5px 0;
-    display: flex;
-    align-items: end;
-
-    & span {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 42px;
-      text-transform: uppercase;
+    &__line {
+      width: 270px;
+      border-bottom: 4px solid;
+      display: block;
+      position: relative;
     }
 
-    & h5 {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 21px;
-      text-transform: uppercase;
-      padding: 0 0 5px 5px;
+    &__text {
+      padding: 21.5px 0;
+      display: flex;
+      align-items: end;
+
+      & span {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+      }
+
+      & h5 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        padding: 0 0 5px 5px;
+      }
     }
   }
 }
