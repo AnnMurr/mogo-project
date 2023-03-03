@@ -1,58 +1,67 @@
-.menu__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.menu {
 
-  .menu__wrap {
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &__wrapper {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-    .menu__navigation {
-      display: flex;
-      align-items: center;
+  &__wrap {
+    display: flex;
+  }
 
-      li {
-        width: 85px;
-        margin: 0 14.5px;
-        border-bottom: 1px solid transparent;
-        padding: 3px 0;
-        text-align: center;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 16px;
-        text-transform: uppercase;
+  &__navigation {
+    display: flex;
+    align-items: center;
+
+    li {
+      width: 85px;
+      margin: 0 14.5px;
+      border-bottom: 1px solid transparent;
+      padding: 3px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+
+      &:hover {
+        border-bottom: 1px solid @Manhattan-color-hover;
+      }
+
+      a {
+        text-decoration: none;
+        color: @white-color;
         transition: all 0.5s ease;
 
         &:hover {
-          border-bottom: 1px solid @Manhattan-color-hover;
-        }
-
-        a {
-          text-decoration: none;
-          color: @white-color;
-          transition: all 0.5s ease;
-
-          &:hover {
-            color: @Manhattan-color-hover;
-          }
+          color: @Manhattan-color-hover;
         }
       }
     }
   }
 
-  .menu__buttons {
+  &__buttons {
     display: flex;
+  }
 
-    .menu__btn {
-      width: 24px;
-      height: 24px;
+  &__btn {
+    width: 24px;
+    height: 24px;
 
-      button {
-        cursor: pointer;
-      }
+    button {
+      cursor: pointer;
     }
+  }
 
-    .menu__btn:first-child {
-      margin: 0 35px 0 17px;
-    }
+  &__btn:first-child {
+    margin: 0 35px 0 17px;
   }
 }
