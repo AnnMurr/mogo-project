@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Open+Sans:wght@600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&family=Red+Rose:wght@300;400;700&display=swap');
+.menu__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__wrapper .menu__wrap {
+  display: flex;
+}
+.menu__wrapper .menu__wrap .menu__navigation {
+  display: flex;
+  align-items: center;
+}
+.menu__wrapper .menu__wrap .menu__navigation li {
+  width: 85px;
+  margin: 0 14.5px;
+  border-bottom: 1px solid transparent;
+  padding: 3px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.menu__wrapper .menu__wrap .menu__navigation li:hover {
+  border-bottom: 1px solid #F4BF87;
+}
+.menu__wrapper .menu__wrap .menu__navigation li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.menu__wrapper .menu__wrap .menu__navigation li a:hover {
+  color: #F4BF87;
+}
+.menu__wrapper .menu__buttons {
+  display: flex;
+}
+.menu__wrapper .menu__buttons .menu__btn {
+  width: 24px;
+  height: 24px;
+}
+.menu__wrapper .menu__buttons .menu__btn button {
+  cursor: pointer;
+}
+.menu__wrapper .menu__buttons .menu__btn:first-child {
+  margin: 0 35px 0 17px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+input,
+textarea,
+button {
+  border: none;
+}
+li {
+  list-style-type: none;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+body .container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+body .container button {
+  background-color: transparent;
+  padding: 0;
+}
+body .container .divider {
+  width: 170px;
+  border-bottom: 4px solid #fff;
+  display: block;
+  margin: 0 auto;
+}
+.banner {
+  padding: 177px 0 116px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-height: 1024px;
+  z-index: -1;
+  background: url('desktop.0b52a987.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(233, 130, 131, 0.89688375) 0%, rgba(235, 237, 137, 0.89968487) 100%);
+  top: 0;
+}
+.banner__wrapper {
+  text-align: center;
+}
+.banner__headline h2 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  color: #fff;
+}
+.banner__heading {
+  padding: 9.5px 0 50px 0;
+  text-align: center;
+}
+.banner__heading h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 176px;
+  color: #fff;
+  white-space: pre-line;
+}
+.banner__button a {
+  display: inline-block;
+  margin: 72px auto 0 auto;
+  border: 4px solid #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 22px 104px;
+  text-transform: uppercase;
+}
+.banner__button a:hover {
+  background-color: #fff;
+  color: #E4BE8D;
+}
+.banner__button a:focus {
+  background-color: #fff;
+  border: 4px solid #E4BE8D;
+  color: #E4BE8D;
+  outline: none;
+}
+.scroll {
+  position: sticky;
+  top: 0;
+}
+.scroll__wrapper {
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.scroll__slide {
+  color: #F9EFCF;
+}
+.scroll__slide_active {
+  color: #fff;
+}
+.scroll__slide_active .scroll__line::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  border-bottom: 4px solid #F38281;
+}
+.scroll__line {
+  width: 270px;
+  border-bottom: 4px solid;
+  display: block;
+  position: relative;
+}
+.scroll__text {
+  padding: 21.5px 0;
+  display: flex;
+  align-items: end;
+}
+.scroll__text span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.scroll__text h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 0 0 5px 5px;
+}
+
+
+/*# sourceMappingURL=/mogo-project.5aa9afe8.css.map */
