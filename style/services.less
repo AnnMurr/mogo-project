@@ -1,0 +1,82 @@
+.services {
+  &__wrapper {
+    padding: 42px 0 91px 0;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__headline {
+    padding: 18px 0;
+
+    & h3 {
+      font-family: @Kaushan-Script;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+      color: @Shark-color;
+    }
+  }
+
+  &__title {
+    padding: 19.5px 0 42px 0;
+
+    & h2 {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 42px;
+      text-transform: uppercase;
+      color: @Shark-color;
+    }
+  }
+
+  &__items {
+    padding-top: 80px;
+    display: grid;
+    grid-template: repeat(2, 139px) / repeat(3, 1fr);
+    grid-row-gap: 140px;
+    grid-column-gap: 30px;
+  }
+
+  .item {
+    display: flex;
+
+    &__icon {
+      margin-right: 30px;
+
+      &-inner {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    .wrap-img {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__heading {
+      padding: 19.5px 0 11.5px 0;
+
+      & h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: @Shark-color;
+      }
+    }
+
+    &__text {
+      padding: 19px 0;
+
+      & h5 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: @Shark-color;
+      }
+    }
+  }
+}
