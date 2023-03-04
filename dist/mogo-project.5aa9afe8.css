@@ -255,6 +255,7 @@ body .container .divider_froly {
   font-weight: 400;
   font-size: 30px;
   line-height: 44px;
+  color: #2D3033;
 }
 .about__title {
   padding: 19.5px 0 42px 0;
@@ -264,6 +265,7 @@ body .container .divider_froly {
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
+  color: #2D3033;
 }
 .about__text {
   padding: 38px 0;
@@ -345,6 +347,72 @@ body .container .divider_froly {
   font-size: 24px;
   line-height: 28px;
   color: #fff;
+}
+.services__wrapper {
+  padding: 42px 0 91px 0;
+}
+.services__header {
+  text-align: center;
+}
+.services__headline {
+  padding: 18px 0;
+}
+.services__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #2D3033;
+}
+.services__title {
+  padding: 19.5px 0 42px 0;
+}
+.services__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.services__items {
+  padding-top: 80px;
+  display: grid;
+  grid-template: repeat(2, 139px) / repeat(3, 1fr);
+  grid-row-gap: 140px;
+  grid-column-gap: 30px;
+}
+.services .item {
+  display: flex;
+}
+.services .item__icon {
+  margin-right: 30px;
+}
+.services .item__icon-inner {
+  width: 70px;
+  height: 70px;
+}
+.services .item .wrap-img {
+  width: 70px;
+  height: 70px;
+}
+.services .item__heading {
+  padding: 19.5px 0 11.5px 0;
+}
+.services .item__heading h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.services .item__text {
+  padding: 19px 0;
+}
+.services .item__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
 }
 
 
