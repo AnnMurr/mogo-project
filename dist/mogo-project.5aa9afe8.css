@@ -116,18 +116,26 @@ body .container {
   padding: 0 15px;
   margin: 0 auto;
 }
-body .container button {
+body button {
   background-color: transparent;
   padding: 0;
 }
-body .container .divider {
+body .divider {
   width: 170px;
   border-bottom: 4px solid #fff;
   display: block;
   margin: 0 auto;
 }
-body .container .divider_froly {
+body .divider_froly {
   border-bottom: 4px solid #F38281;
+}
+body .devices___background,
+body .gadgets__image-frame,
+body .gadgets__image-phone,
+body .banner__background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .banner__background {
   padding: 177px 0 116px 0;
@@ -137,9 +145,6 @@ body .container .divider_froly {
   max-height: 1024px;
   z-index: -1;
   background: url("desktop.0b52a987.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .banner__background::before {
   content: "";
@@ -413,6 +418,72 @@ body .container .divider_froly {
   font-size: 18px;
   line-height: 21px;
   color: #2D3033;
+}
+.devices___background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("devices-background.355239ef.png");
+  padding: 42px 0 57px 0;
+}
+.devices___background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.devices___wrapper {
+  position: relative;
+  z-index: 2;
+}
+.devices__header {
+  text-align: center;
+  padding-bottom: 59px;
+}
+.devices__headline {
+  padding: 18px 0;
+}
+.devices__headline h3 {
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.devices__title {
+  padding: 19.5px 0 37px 0;
+}
+.devices__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+.gadgets {
+  position: relative;
+}
+.gadgets__wrap {
+  padding: 15px 0;
+}
+.gadgets__image-tablet {
+  margin: 0 auto;
+  max-width: 659px;
+}
+.gadgets__image-frame {
+  background: url("devices-frame.9b34ad1a.png");
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.gadgets__image-phone {
+  background: url("devices-phone.cb7be106.png");
+  position: absolute;
+  bottom: -19%;
+  right: 200px;
+  width: 200px;
+  height: 411px;
 }
 
 
