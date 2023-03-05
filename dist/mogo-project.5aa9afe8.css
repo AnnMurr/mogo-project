@@ -134,7 +134,8 @@ body .divider_froly {
 body .devices___background,
 body .gadgets__image-frame,
 body .gadgets__image-phone,
-body .banner__background {
+body .banner__background,
+body .accordion__arrow-btn {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -321,7 +322,7 @@ body .banner__background {
   color: #fff;
 }
 .futures {
-  background-color: #95E1D3;
+  background-color: #95e1d3;
   margin-top: 64px;
 }
 .futures__wrapper {
@@ -486,6 +487,128 @@ body .banner__background {
   right: 200px;
   width: 200px;
   height: 411px;
+}
+.service__wrapper {
+  padding: 42px 0 114px 0;
+}
+.service__header {
+  text-align: center;
+}
+.service__headline {
+  padding: 18px 0;
+}
+.service__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #2D3033;
+}
+.service__title {
+  padding: 19.5px 0 42px 0;
+}
+.service__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.service__text {
+  padding: 38px 0 80px 0;
+}
+.service__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.service__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+.service__content .service__image-inner {
+  height: 100%;
+  max-height: 483px;
+}
+.service__content .service__image-inner img {
+  height: 100%;
+}
+.service .accordion__item {
+  border: 1px solid #C6CBCD;
+  margin-bottom: 22px;
+}
+.service .accordion__item_active .accordion__description {
+  border-bottom: 1px solid #C6CBCD;
+}
+.service .accordion__item_active .accordion__content {
+  height: 127px;
+  margin: 18px 24px 18px 0;
+}
+.service .accordion__description {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 0.7s ease;
+}
+.service .accordion__description:hover {
+  background-color: #f4f4f4;
+}
+.service .accordion__content {
+  height: 0;
+  overflow-y: scroll;
+  transition: all 0.7s ease-in-out;
+}
+.service .accordion__content::-webkit-scrollbar {
+  background-color: #f4f4f4;
+  width: 7px;
+}
+.service .accordion__content::-webkit-scrollbar-thumb {
+  background-color: #95e1d3;
+}
+.service .accordion__icon {
+  padding: 0 40px 0 18px;
+}
+.service .accordion__title {
+  padding: 31px 0;
+}
+.service .accordion__title h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.service .accordion__text {
+  padding: 0 54px 0 22px;
+}
+.service .accordion__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
+}
+.service .accordion__arrows {
+  margin-left: auto;
+  padding-right: 14px;
+}
+.service .accordion__arrows-wrap {
+  width: 42px;
+  height: 42px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service .accordion__arrow-btn {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background: url("arrow.13184a65.svg");
+}
+.service .accordion__arrow-btn_active {
+  background: url("arrow-active.f9a82cc0.svg");
 }
 
 
