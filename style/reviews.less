@@ -1,0 +1,106 @@
+.reviews {
+  background-color: @Alabaster-color;
+
+  &__container {
+    max-width: 1177px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__swiper-container {
+    overflow: hidden;
+    padding: 42px 11.5px;
+  }
+  &__swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    &-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 170px;
+      border: 2px solid @Morning-Glory-color;
+    }
+  }
+
+  &__block {
+    margin-left: 30px;
+    max-width: 770px;
+  }
+
+  &__comment {
+    padding: 6px 0 27px 0;
+
+    & h4 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      font-style: italic;
+      color: @Gray-Chateau-color;
+    }
+  }
+
+  &__user-data {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-name {
+    padding: 4.5px 0;
+
+    & h3 {
+      font-family: @Kaushan-Script;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 44px;
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+    button {
+      width: 42px;
+      height: 42px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      
+
+      &.reviews__btn-left {
+        background: url("@{icon}arrow-left.svg") no-repeat bottom;
+        &:hover {
+          background: url("@{icon}arrow-left-hover.svg") no-repeat bottom;
+        }
+      }
+      
+      &.reviews__btn-right {
+        background: url("@{icon}arrow-right.svg") no-repeat bottom;
+        &:hover {
+          background: url("@{icon}arrow-right-hover.svg") no-repeat bottom;
+        }
+      }
+    }
+  }
+}

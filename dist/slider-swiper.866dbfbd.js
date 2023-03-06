@@ -117,27 +117,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"core/index.js":[function(require,module,exports) {
-var accordItem = document.querySelectorAll('.accordion__item');
-var ACCORDION_ITEM_ACTIVE = 'accordion__item_active';
-var ACCORDION_ARROW_BTN_SELECTOR = '.accordion__arrow-btn';
-var ACCORDION_ARROW_BTN_ACTIVE = 'accordion__arrow-btn_active';
-var arrowBtn = function arrowBtn(el) {
-  return el.querySelector(ACCORDION_ARROW_BTN_SELECTOR);
-};
-var deactivateAllItems = function deactivateAllItems() {
-  accordItem.forEach(function (element) {
-    element.classList.remove(ACCORDION_ITEM_ACTIVE);
-    arrowBtn(element).classList.remove(ACCORDION_ARROW_BTN_ACTIVE);
-  });
-};
-accordItem.forEach(function (element) {
-  element.addEventListener("click", function () {
-    var isItemActive = this.classList.contains(ACCORDION_ITEM_ACTIVE);
-    deactivateAllItems();
-    this.classList.toggle(ACCORDION_ITEM_ACTIVE, !isItemActive);
-    arrowBtn(element).classList.toggle(ACCORDION_ARROW_BTN_ACTIVE, !isItemActive);
-  });
+})({"core/slider-swiper.js":[function(require,module,exports) {
+new Swiper('.reviews__swiper-container', {
+  navigation: {
+    nextEl: '.reviews__btn-right',
+    prevEl: '.reviews__btn-left'
+  },
+  loop: true,
+  speed: 800
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -308,5 +295,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","core/index.js"], null)
-//# sourceMappingURL=/core.91401428.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","core/slider-swiper.js"], null)
+//# sourceMappingURL=/slider-swiper.866dbfbd.js.map
