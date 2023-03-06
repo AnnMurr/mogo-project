@@ -59,7 +59,8 @@ li {
 body {
   font-family: 'Raleway', sans-serif;
 }
-body .container {
+body .container,
+body .work__header-conteiner {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -814,6 +815,104 @@ body .banner__background {
 }
 .partners__item {
   max-width: 127px;
+}
+.work__wrapper {
+  padding: 84px 0;
+}
+.work__header {
+  text-align: center;
+}
+.work__headline {
+  padding: 18px 0;
+}
+.work__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #2D3033;
+}
+.work__title {
+  padding: 19.5px 0 38.5px 0;
+}
+.work__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.work__text {
+  padding: 38px 0;
+}
+.work__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.work .gallery__wrap {
+  padding-top: 42px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+.work .gallery__picture {
+  width: 100%;
+  height: 100%;
+}
+.work .gallery__picture:nth-child(3) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+}
+.work .gallery__picture:nth-child(6) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work .gallery__picture:nth-child(6)::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(233, 130, 131, 0.89688375) 0%, rgba(235, 237, 137, 0.89968487) 100%);
+}
+.work .gallery__picture-inner {
+  width: 100%;
+  height: 100%;
+}
+.work .gallery__picture-inner img {
+  height: 100%;
+  width: 100%;
+}
+.work .gallery__box {
+  position: absolute;
+  text-align: center;
+  padding-top: 44px;
+}
+.work .gallery__box-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+}
+.work .gallery__box-title {
+  padding: 68px 0 11px 0;
+}
+.work .gallery__box-title h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.work .gallery__box-text {
+  padding: 4.5px 0;
+}
+.work .gallery__box-text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
 }
 
 
