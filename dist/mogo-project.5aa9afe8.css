@@ -703,6 +703,103 @@ body .banner__background {
 .reviews__buttons button.reviews__btn-right:hover {
   background: url("arrow-right-hover.84d825c0.svg") no-repeat bottom;
 }
+.team__wrapper {
+  padding: 84px 0;
+}
+.team__header {
+  text-align: center;
+}
+.team__headline {
+  padding: 18px 0;
+}
+.team__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #2D3033;
+}
+.team__title {
+  padding: 19.5px 0 38.5px 0;
+}
+.team__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.team__text {
+  padding: 38px 0;
+}
+.team__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.team__gallery-wrap {
+  padding-top: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+.team__gallery-wrap .card-person {
+  max-width: 386px;
+  text-align: center;
+}
+.team__gallery-wrap .card-person__image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team__gallery-wrap .card-person:first-child .card-person__photo::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  background: linear-gradient(180deg, rgba(233, 130, 131, 0.89688375) 0%, rgba(235, 237, 137, 0.89968487) 100%);
+}
+.team__gallery-wrap .card-person__name {
+  padding: 26px 0;
+}
+.team__gallery-wrap .card-person__name h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.team__gallery-wrap .card-person__profession {
+  padding: 4.5px 0;
+}
+.team__gallery-wrap .card-person__profession h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.team__gallery-wrap .card-person .social-media {
+  position: absolute;
+}
+.team__gallery-wrap .card-person .social-media__icons {
+  display: flex;
+}
+.team__gallery-wrap .card-person .social-media__icon {
+  width: 42px;
+  height: 42px;
+  background-color: #F9EFCF;
+  margin-left: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team__gallery-wrap .card-person .social-media__icon:first-child {
+  background-color: #F38281;
+  margin: 0;
+}
 
 
 /*# sourceMappingURL=/mogo-project.5aa9afe8.css.map */
