@@ -1,59 +1,5 @@
+@import 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Open+Sans:wght@600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&family=Red+Rose:wght@300;400;700&display=swap');
-.menu .container {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-.menu__wrapper {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.menu__wrap {
-  display: flex;
-}
-.menu__navigation {
-  display: flex;
-  align-items: center;
-}
-.menu__navigation li {
-  width: 85px;
-  margin: 0 14.5px;
-  border-bottom: 1px solid transparent;
-  padding: 3px 0;
-  text-align: center;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  transition: all 0.5s ease;
-}
-.menu__navigation li:hover {
-  border-bottom: 1px solid #F4BF87;
-}
-.menu__navigation li a {
-  text-decoration: none;
-  color: #fff;
-  transition: all 0.5s ease;
-}
-.menu__navigation li a:hover {
-  color: #F4BF87;
-}
-.menu__buttons {
-  display: flex;
-}
-.menu__btn {
-  width: 24px;
-  height: 24px;
-}
-.menu__btn button {
-  cursor: pointer;
-}
-.menu__btn:first-child {
-  margin: 0 35px 0 17px;
-}
 *,
 *::before,
 *::after {
@@ -131,14 +77,72 @@ body .divider {
 body .divider_froly {
   border-bottom: 4px solid #F38281;
 }
+body .divider_small {
+  width: 70px;
+  margin: 0 56px 0 0;
+}
 body .devices___background,
 body .gadgets__image-frame,
 body .gadgets__image-phone,
-body .banner__background,
-body .accordion__arrow-btn {
+body .banner__background {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.menu .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.menu__wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__wrap {
+  display: flex;
+}
+.menu__navigation {
+  display: flex;
+  align-items: center;
+}
+.menu__navigation li {
+  width: 85px;
+  margin: 0 14.5px;
+  border-bottom: 1px solid transparent;
+  padding: 3px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.menu__navigation li:hover {
+  border-bottom: 1px solid #F4BF87;
+}
+.menu__navigation li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.menu__navigation li a:hover {
+  color: #F4BF87;
+}
+.menu__buttons {
+  display: flex;
+}
+.menu__btn {
+  width: 24px;
+  height: 24px;
+}
+.menu__btn button {
+  cursor: pointer;
+}
+.menu__btn:first-child {
+  margin: 0 35px 0 17px;
 }
 .banner__background {
   padding: 177px 0 116px 0;
@@ -322,7 +326,7 @@ body .accordion__arrow-btn {
   color: #fff;
 }
 .futures {
-  background-color: #95e1d3;
+  background-color: #95E1D3;
   margin-top: 64px;
 }
 .futures__wrapper {
@@ -528,8 +532,7 @@ body .accordion__arrow-btn {
   grid-column-gap: 30px;
 }
 .service__content .service__image-inner {
-  height: 100%;
-  max-height: 483px;
+  height: 484px;
 }
 .service__content .service__image-inner img {
   height: 100%;
@@ -537,6 +540,9 @@ body .accordion__arrow-btn {
 .service .accordion__item {
   border: 1px solid #C6CBCD;
   margin-bottom: 22px;
+}
+.service .accordion__item:last-child {
+  margin: 0;
 }
 .service .accordion__item_active .accordion__description {
   border-bottom: 1px solid #C6CBCD;
@@ -553,7 +559,7 @@ body .accordion__arrow-btn {
   transition: all 0.7s ease;
 }
 .service .accordion__description:hover {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
 }
 .service .accordion__content {
   height: 0;
@@ -561,11 +567,11 @@ body .accordion__arrow-btn {
   transition: all 0.7s ease-in-out;
 }
 .service .accordion__content::-webkit-scrollbar {
-  background-color: #f4f4f4;
+  background-color: #f5f5f5;
   width: 7px;
 }
 .service .accordion__content::-webkit-scrollbar-thumb {
-  background-color: #95e1d3;
+  background-color: #95E1D3;
 }
 .service .accordion__icon {
   padding: 0 40px 0 18px;
@@ -609,6 +615,93 @@ body .accordion__arrow-btn {
 }
 .service .accordion__arrow-btn_active {
   background: url("arrow-active.f9a82cc0.svg");
+}
+.reviews {
+  background-color: #F8F8F8;
+}
+.reviews__container {
+  max-width: 1177px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.reviews__wrapper {
+  position: relative;
+}
+.reviews__swiper-container {
+  overflow: hidden;
+  padding: 42px 11.5px;
+}
+.reviews__swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.reviews__content {
+  display: flex;
+  justify-content: center;
+}
+.reviews__icon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 170px;
+  border: 2px solid #95E1D3;
+}
+.reviews__block {
+  margin-left: 30px;
+  max-width: 770px;
+}
+.reviews__comment {
+  padding: 6px 0 27px 0;
+}
+.reviews__comment h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: italic;
+  color: #A9AFB1;
+}
+.reviews__user-data {
+  display: flex;
+  align-items: center;
+}
+.reviews__user-name {
+  padding: 4.5px 0;
+}
+.reviews__user-name h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.reviews__buttons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.reviews__buttons button {
+  width: 42px;
+  height: 42px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.reviews__buttons button.reviews__btn-left {
+  background: url("arrow-left.cf8cc914.svg") no-repeat bottom;
+}
+.reviews__buttons button.reviews__btn-left:hover {
+  background: url("arrow-left-hover.035e8b66.svg") no-repeat bottom;
+}
+.reviews__buttons button.reviews__btn-right {
+  background: url("arrow-right.b642b46e.svg") no-repeat bottom;
+}
+.reviews__buttons button.reviews__btn-right:hover {
+  background: url("arrow-right-hover.84d825c0.svg") no-repeat bottom;
 }
 
 

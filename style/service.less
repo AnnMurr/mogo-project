@@ -47,8 +47,7 @@
     grid-column-gap: 30px;
 
     .service__image-inner {
-      height: 100%;
-      max-height: 483px;
+      height: 484px;
 
       & img {
         height: 100%;
@@ -60,6 +59,10 @@
     &__item {
       border: 1px solid @Silver-Sand-color;
       margin-bottom: 22px;
+
+      &:last-child {
+        margin: 0;
+      }
 
       &_active {
         .accordion__description {
@@ -80,7 +83,7 @@
       transition: all 0.7s ease;
 
       &:hover {
-        background-color: @Wild-Sand-solid-color;
+        background-color: @Wild-Sand-color;
       }
     }
 
