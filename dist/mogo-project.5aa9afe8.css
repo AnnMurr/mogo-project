@@ -800,6 +800,21 @@ body .banner__background {
   background-color: #F38281;
   margin: 0;
 }
+.partners {
+  background-color: #F8F8F8;
+}
+.partners__wrapper {
+  padding: 42px 0;
+}
+.partners__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.partners__item {
+  max-width: 127px;
+}
 
 
 /*# sourceMappingURL=/mogo-project.5aa9afe8.css.map */
