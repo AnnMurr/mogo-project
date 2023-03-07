@@ -649,6 +649,14 @@ body .banner__background {
   height: 170px;
   border: 2px solid #95E1D3;
 }
+.reviews__icon-inner-photo {
+  border: none;
+  background-color: #F8F8F8;
+  border-radius: 100px;
+}
+.reviews__photo {
+  border-radius: 100px;
+}
 .reviews__block {
   margin-left: 30px;
   max-width: 770px;
