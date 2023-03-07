@@ -86,7 +86,8 @@ body .devices___background,
 body .gadgets__image-frame,
 body .gadgets__image-phone,
 body .banner__background,
-body .clients__background {
+body .clients__background,
+body .card__picture-inner img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1020,6 +1021,127 @@ body .clients__background {
   display: flex;
   align-items: center;
   color: #2D3033;
+}
+.stories__wrapper {
+  padding: 84px 0;
+}
+.stories__header {
+  text-align: center;
+}
+.stories__headline {
+  padding: 18px 0;
+}
+.stories__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+  color: #2D3033;
+}
+.stories__title {
+  padding: 19.5px 0 38.5px 0;
+}
+.stories__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.stories__content {
+  padding-top: 42px;
+}
+.stories__content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.stories__content .cards .card {
+  position: relative;
+}
+.stories__content .cards .card__picture img {
+  max-height: 253px;
+  width: 100%;
+}
+.stories__content .cards .card__description {
+  padding: 30px 0 23px 0;
+}
+.stories__content .cards .card__title {
+  padding: 6px 0;
+}
+.stories__content .cards .card__title h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.stories__content .cards .card__text {
+  padding: 7.5px 0;
+}
+.stories__content .cards .card__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
+}
+.stories__content .cards .card__footer {
+  display: flex;
+}
+.stories__content .cards .card__footer > div {
+  display: flex;
+  align-items: center;
+}
+.stories__content .cards .card__footer > div:first-child {
+  margin-right: 48px;
+}
+.stories__content .cards .card__footer > div > div:first-child {
+  margin-right: 16px;
+}
+.stories__content .cards .card__footer > div > div span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #2D3033;
+}
+.stories__content .cards .card__comment-icon {
+  width: 32px;
+  height: 32px;
+}
+.stories__content .cards .card__comment-icon button {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.stories__content .cards .card__comment-icon button:hover {
+  transform: scale(1.1, 1.1);
+}
+.stories__content .cards .card .post-date {
+  position: absolute;
+  top: 30%;
+  left: -4%;
+}
+.stories__content .cards .card .post-date__wrap {
+  background-color: #95E1D3;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.stories__content .cards .card .post-date__number span {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.stories__content .cards .card .post-date__month h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 
