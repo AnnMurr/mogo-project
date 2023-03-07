@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img\\desktop.png":[["desktop.0b52a987.png","img/desktop.png"],"img/desktop.png"],"./img\\devices-background.png":[["devices-background.355239ef.png","img/devices-background.png"],"img/devices-background.png"],"./img\\devices-frame.png":[["devices-frame.9b34ad1a.png","img/devices-frame.png"],"img/devices-frame.png"],"./img\\devices-phone.png":[["devices-phone.cb7be106.png","img/devices-phone.png"],"img/devices-phone.png"],"./icon\\arrow.svg":[["arrow.13184a65.svg","icon/arrow.svg"],"icon/arrow.svg"],"./icon\\arrow-active.svg":[["arrow-active.f9a82cc0.svg","icon/arrow-active.svg"],"icon/arrow-active.svg"],"./icon\\arrow-left.svg":[["arrow-left.cf8cc914.svg","icon/arrow-left.svg"],"icon/arrow-left.svg"],"./icon\\arrow-left-hover.svg":[["arrow-left-hover.035e8b66.svg","icon/arrow-left-hover.svg"],"icon/arrow-left-hover.svg"],"./icon\\arrow-right.svg":[["arrow-right.b642b46e.svg","icon/arrow-right.svg"],"icon/arrow-right.svg"],"./icon\\arrow-right-hover.svg":[["arrow-right-hover.84d825c0.svg","icon/arrow-right-hover.svg"],"icon/arrow-right-hover.svg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./img\\desktop.png":[["desktop.0b52a987.png","img/desktop.png"],"img/desktop.png"],"./img\\devices-background.png":[["devices-background.355239ef.png","img/devices-background.png"],"img/devices-background.png"],"./img\\devices-frame.png":[["devices-frame.9b34ad1a.png","img/devices-frame.png"],"img/devices-frame.png"],"./img\\devices-phone.png":[["devices-phone.cb7be106.png","img/devices-phone.png"],"img/devices-phone.png"],"./icon\\arrow.svg":[["arrow.13184a65.svg","icon/arrow.svg"],"icon/arrow.svg"],"./icon\\arrow-active.svg":[["arrow-active.f9a82cc0.svg","icon/arrow-active.svg"],"icon/arrow-active.svg"],"./icon\\arrow-left.svg":[["arrow-left.cf8cc914.svg","icon/arrow-left.svg"],"icon/arrow-left.svg"],"./icon\\arrow-left-hover.svg":[["arrow-left-hover.035e8b66.svg","icon/arrow-left-hover.svg"],"icon/arrow-left-hover.svg"],"./icon\\arrow-right.svg":[["arrow-right.b642b46e.svg","icon/arrow-right.svg"],"icon/arrow-right.svg"],"./icon\\arrow-right-hover.svg":[["arrow-right-hover.84d825c0.svg","icon/arrow-right-hover.svg"],"icon/arrow-right-hover.svg"],"./img\\clients-background.jpg":[["clients-background.f3f2ccbc.jpg","img/clients-background.jpg"],"img/clients-background.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58353" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59946" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

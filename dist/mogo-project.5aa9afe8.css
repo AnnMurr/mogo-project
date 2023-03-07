@@ -85,7 +85,8 @@ body .divider_small {
 body .devices___background,
 body .gadgets__image-frame,
 body .gadgets__image-phone,
-body .banner__background {
+body .banner__background,
+body .clients__background {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -829,6 +830,7 @@ body .banner__background {
 }
 .work__header {
   text-align: center;
+  padding-bottom: 42px;
 }
 .work__headline {
   padding: 18px 0;
@@ -859,9 +861,8 @@ body .banner__background {
   line-height: 21px;
 }
 .work .gallery__wrap {
-  padding-top: 42px;
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(2, 378px) / repeat(4, 1fr);
 }
 .work .gallery__picture {
   width: 100%;
@@ -921,6 +922,104 @@ body .banner__background {
   font-size: 18px;
   line-height: 21px;
   color: #fff;
+}
+.clients {
+  margin-top: 84px;
+}
+.clients__background {
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-height: 1024px;
+  background: url("clients-background.f3f2ccbc.jpg");
+}
+.clients__background::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+}
+.clients__wrapper {
+  position: relative;
+  z-index: 2;
+  padding: 42px 0;
+}
+.clients__header {
+  text-align: center;
+}
+.clients__headline {
+  padding: 18px 0;
+}
+.clients__headline h3 {
+  font-family: 'Kaushan Script', sans-serif;
+  color: #2D3033;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+.clients__title {
+  padding: 19.5px 0 38.5px 0;
+}
+.clients__title h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.clients__content-wrap {
+  padding: 42px 10px 0 10px;
+}
+.clients__comments {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 42px;
+}
+.clients__comments .comment__wrap {
+  display: flex;
+}
+.clients__comments .comment__photo {
+  padding: 20px 50px 0 0;
+}
+.clients__comments .comment__photo-inner img {
+  border-radius: 100px;
+}
+.clients__comments .comment__user-data {
+  max-width: 369px;
+}
+.clients__comments .comment__user-name {
+  padding: 12px 0;
+}
+.clients__comments .comment__user-name h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.clients__comments .comment__user-profession {
+  padding-bottom: 28px;
+}
+.clients__comments .comment__user-profession h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.clients__comments .comment__text {
+  padding: 52.5px 0 22.5px 0;
+}
+.clients__comments .comment__text h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #2D3033;
 }
 
 
