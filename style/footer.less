@@ -1,0 +1,279 @@
+.last-block {
+  &__wrapper {
+    padding-top: 42px;
+  }
+
+  .footer {
+    &__wrap {
+      display: grid;
+      grid-template-areas:
+        "first-bolck second-bolck third-bolck"
+        "fourth-bolck fourth-bolck fourth-bolck";
+      grid-template: repeat(2, auto) / 31.7% 40.2% 23.1%;
+      grid-column-gap: 30px;
+      grid-row-gap: 40px;
+
+      //  grid-template-columns: 370px 470px 370px;
+      //  grid-template-rows: 100%;
+      // grid-template: repeat(2, auto) / 370px 470px 370px ;
+      //   grid-column-gap: 30px;
+      //   grid-row-gap: 40px;
+
+      //   &:last-child {
+      //     grid-row-start: 2;
+      //     grid-row-end: 3;
+      //     grid-column-start: 1;
+      //     grid-column-end: 3;
+      //   }
+
+      .subscription {
+        grid-area: first-bolck;
+        &__text {
+          padding: 17.5px 0;
+          & h5 {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: @Silver-Sand-color;
+          }
+        }
+
+        &__followers {
+          padding: 22px 0;
+          display: flex;
+          align-items: flex-end;
+
+          h3 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 30px;
+            color: @Shark-color;
+            text-transform: uppercase;
+            span {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+
+          h5 {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: @Shark-color;
+            text-transform: uppercase;
+            margin-left: 5px;
+          }
+        }
+        &__social-media {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0;
+        }
+
+        &__social-subject {
+          padding: 4px 0;
+          p {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: @Silver-Sand-color;
+          }
+        }
+
+        &__social-icons {
+          display: flex;
+          max-width: 270px;
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        &__icon {
+          width: 24px;
+          height: 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &__form {
+          padding-top: 37px;
+        }
+        &__form-wrap {
+          display: flex;
+
+          input {
+            width: 100%;
+            border: 1px solid @Silver-Sand-color;
+            text-align: center;
+
+            &::placeholder {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              color: @Silver-Sand-color;
+            }
+          }
+
+          button {
+            padding: 17px 16.5px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color: @white-color;
+            background-color: @Morning-Glory-color;
+            cursor: pointer;
+            transition: all 0.5s ease;
+
+            &:hover {
+              background-color: desaturate(
+                darken(@Morning-Glory-color, 7%),
+                5%
+              );
+            }
+            &:focus {
+              background-color: desaturate(
+                darken(@Morning-Glory-color, 25%),
+                35%
+              );
+            }
+          }
+        }
+      }
+    }
+    &__blogs {
+      .blog {
+        grid-area: second-bolck;
+        &__heading {
+          padding: 36px 0;
+          h4 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: @Shark-color;
+            text-transform: uppercase;
+          }
+        }
+
+        &__article {
+          transition: all 0.7s ease;
+          &-wrap {
+            display: flex;
+            margin-bottom: 20px;
+            max-height: 105px;
+          }
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &__image {
+          margin-right: 30px;
+          max-width: 170px;
+          max-height: 105px;
+          width: 100%;
+          &-inner {
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+
+        &__title {
+          padding: 3.5px 0;
+
+          h5 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+            color: @Shark-color;
+          }
+        }
+
+        &__date {
+          padding: 10px 0;
+
+          span {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: @Shark-color;
+          }
+        }
+      }
+    }
+    &__instagram {
+      .block-instagram {
+        grid-area: third-bolck;
+        &__heading {
+          padding: 36px 0;
+
+          h4 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: @Shark-color;
+          }
+        }
+
+        &__gallery {
+          max-height: 270px;
+          max-width: 270px;
+          display: grid;
+          grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+          gap: 2px;
+        }
+
+        &__link {
+          padding: 38px 0;
+          a {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: @Shark-color;
+            transition: all 0.7s ease;
+
+            &:hover {
+                color: @Gray-Chateau-color;
+                
+            }
+          }
+        }
+      }
+    }
+    &__copyright {
+      grid-area: fourth-bolck;
+      display: grid;
+      grid-row-start: 2;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      text-align: center;
+      &-text {
+        padding: 17.5px 0;
+
+        h6 {
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: @Shark-color;
+        }
+      }
+    }
+  }
+}
