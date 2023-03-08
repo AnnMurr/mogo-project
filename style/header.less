@@ -31,20 +31,19 @@
       font-size: 14px;
       line-height: 16px;
       text-transform: uppercase;
-      transition: all 0.5s ease;
+      .transition (@prop, 0.5s, ease);
 
       &:hover {
         border-bottom: 1px solid @Manhattan-color-hover;
+        a {
+          color: @Manhattan-color-hover;
+        }
       }
 
       a {
         text-decoration: none;
         color: @white-color;
-        transition: all 0.5s ease;
-
-        &:hover {
-          color: @Manhattan-color-hover;
-        }
+        .transition (@prop, 0.5s, ease);
       }
     }
   }
@@ -58,7 +57,11 @@
     height: 24px;
 
     button {
+      .transition (@prop, @time, @ease);
       cursor: pointer;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
     }
   }
 

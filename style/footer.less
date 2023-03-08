@@ -13,19 +13,6 @@
       grid-column-gap: 30px;
       grid-row-gap: 40px;
 
-      //  grid-template-columns: 370px 470px 370px;
-      //  grid-template-rows: 100%;
-      // grid-template: repeat(2, auto) / 370px 470px 370px ;
-      //   grid-column-gap: 30px;
-      //   grid-row-gap: 40px;
-
-      //   &:last-child {
-      //     grid-row-start: 2;
-      //     grid-row-end: 3;
-      //     grid-column-start: 1;
-      //     grid-column-end: 3;
-      //   }
-
       .subscription {
         grid-area: first-bolck;
         &__text {
@@ -96,6 +83,11 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          .transition (@prop, @time, @ease);
+
+          &:hover {
+            transform: scale(1.1, 1.1);
+          }
         }
         &__form {
           padding-top: 37px;
@@ -128,7 +120,7 @@
             color: @white-color;
             background-color: @Morning-Glory-color;
             cursor: pointer;
-            transition: all 0.5s ease;
+            .transition (@prop, 0.5s, ease);
 
             &:hover {
               background-color: desaturate(
@@ -161,14 +153,14 @@
         }
 
         &__article {
-          transition: all 0.7s ease;
+          .transition (@prop, @time, @ease);
           &-wrap {
             display: flex;
             margin-bottom: 20px;
             max-height: 105px;
           }
           &:hover {
-            transform: scale(1.1, 1.1);
+            transform: scale(0.9, 0.9);
           }
 
           &:last-child {
@@ -245,11 +237,10 @@
             text-decoration-line: underline;
             text-transform: uppercase;
             color: @Shark-color;
-            transition: all 0.7s ease;
+            .transition (@prop, 0.5s, ease);
 
             &:hover {
-                color: @Gray-Chateau-color;
-                
+              color: @Gray-Chateau-color;
             }
           }
         }

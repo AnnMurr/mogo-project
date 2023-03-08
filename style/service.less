@@ -80,7 +80,7 @@
       align-items: center;
       cursor: pointer;
       border-bottom: 1px solid transparent;
-      transition: all 0.7s ease;
+      .transition (@prop, 0.5s, ease);
 
       &:hover {
         background-color: @Wild-Sand-color;
@@ -91,7 +91,7 @@
       height: 0;
 
       overflow-y: scroll;
-      transition: all 0.7s ease-in-out;
+      .transition (@prop, 0.5s, ease);
 
       &::-webkit-scrollbar {
         background-color: @Wild-Sand-color;
