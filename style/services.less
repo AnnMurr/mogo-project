@@ -80,3 +80,72 @@
     }
   }
 }
+
+
+@media screen and (@max1024) {
+  .services {
+
+    &__wrapper {
+      padding: 30px 0 58px 0;
+    }
+
+    &__items {
+      padding-top: 68px;
+    }
+
+    &__headline {
+      padding: 16px 0;
+
+      h3 {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+
+    &__title {
+      padding: 20px 0 36px 0;
+
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+
+    &__items {
+      grid-row-gap: 58px;
+      grid-column-gap: 25px;
+      grid-template: repeat(2, 117px) / repeat(3, 1fr);
+    }
+
+    .item {
+
+      &__icon-inner {
+        width: 59px;
+        height: 59px;
+      }
+
+      &__icon {
+        margin-right: 25px;
+      }
+
+      &__heading {
+        padding: 19px 0 11px 0;
+
+        h4 {
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+
+      &__text {
+        padding: 18px 0;
+
+        h5 {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+

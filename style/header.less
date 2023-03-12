@@ -33,6 +33,12 @@
       text-transform: uppercase;
       .transition (@prop, 0.5s, ease);
 
+      @media screen and (@max1024) {
+      font-size: 13px;
+      line-height: 15px;
+      margin: 0 4.5px;
+      }
+
       &:hover {
         border-bottom: 1px solid @Manhattan-color-hover;
         a {
@@ -56,6 +62,11 @@
     width: 24px;
     height: 24px;
 
+    @media screen and (@max1024) {
+      width: 16px;
+      height: 16px;
+      }
+
     button {
       .transition (@prop, @time, @ease);
       cursor: pointer;
@@ -67,5 +78,17 @@
 
   &__btn:first-child {
     margin: 0 35px 0 17px;
+    @media screen and (@max1024)  {
+      margin: 0 24px 0 28px;
+    }
   }
+}
+
+@media screen and (@max1024) {
+  .menu {
+    &__logo {
+      max-width: 183px;
+    }
+  }
+  
 }

@@ -5,6 +5,8 @@ new Swiper ('.reviews__swiper-container', {
     },
     
     loop: true,
+
+    spaceBetween: 20,
     
     speed: 800
 });

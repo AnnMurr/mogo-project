@@ -1,11 +1,13 @@
 .clients {
   margin-top: 84px;
+
   &__background {
     position: relative;
     top: 0;
     width: 100%;
     max-height: 1024px;
     background: url("@{img}clients-background.jpg");
+    .background-img (@size, @repeat, @position);
 
     &::before {
       content: "";
@@ -68,6 +70,7 @@
 
       &__photo {
         padding: 20px 50px 0 0;
+
         &-inner {
           img {
             border-radius: 100px;
@@ -113,6 +116,94 @@
           display: flex;
           align-items: center;
           color: @Shark-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (@max1024) {
+  .clients {
+    margin-top: 58px;
+
+    &__container {
+      max-width: 992px;
+    }
+
+    &__content-wrap {
+      padding: 28px 0px 0 10px;
+    }
+
+    &__wrapper {
+      padding: 28px 0;
+    }
+
+    &__headline {
+      padding: 9.5px 0;
+
+      h3 {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+
+    &__title {
+      padding: 18.5px 0 23.5px 0;
+
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+
+    &__comments {
+      grid-column-gap: 53px;
+      grid-row-gap: 28px;
+    }
+
+    .comment {
+      &__user {
+
+        &-profession {
+          padding-bottom: 17px;
+        }
+
+        &-data {
+          max-width: 316px;
+        }
+
+        &-name {
+          padding: 6.5px 0;
+
+          h4 {
+            font-size: 18px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      &__photo {
+        padding: 13.5px 50px 0 0;
+
+        &-inner {
+          width: 88px;
+          height: 88px;
+        }
+      }
+
+      &__user-profession {
+        h5 {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      &__text {
+        padding: 41px 0 19px 0;
+
+        h5 {
+          font-size: 14px;
+          line-height: 16px;
         }
       }
     }

@@ -5,6 +5,7 @@
     height: 100%;
     background: url("@{img}devices-background.png");
     padding: 42px 0 57px 0;
+    .background-img (@size, @repeat, @position);
 
     &::before {
       content: "";
@@ -47,34 +48,92 @@
       text-transform: uppercase;
     }
   }
+
+  .gadgets {
+    position: relative;
+  
+    &__wrap {
+      padding: 15px 0;
+    }
+  
+    &__image-tablet {
+      margin: 0 auto;
+      max-width: 659px;
+    }
+  
+    &__image-frame {
+      background: url("@{img}devices-frame.png");
+      position: absolute;
+      top: 0;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      width: 100%;
+      max-width: 681px;
+      height: 100%;
+      .background-img (@size, @repeat, @position);
+    }
+  
+    &__image-phone {
+      background: url("@{img}devices-phone.png");
+      position: absolute;
+      bottom: -19%;
+      right: 200px;
+      width: 200px;
+      height: 411px;
+      .background-img (@size, @repeat, @position);
+    }
+  }
 }
 
-.gadgets {
-  position: relative;
 
-  &__wrap {
-    padding: 15px 0;
-  }
 
-  &__image-tablet {
-    margin: 0 auto;
-    max-width: 659px;
-  }
+@media screen and (@max1024) {
+  .devices {
+    &___background {
+      padding: 28px 0 25px 0;
+    }
 
-  &__image-frame {
-    background: url("@{img}devices-frame.png");
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
+    &__header  {
+      padding-bottom: 42px;
+    }
 
-  &__image-phone {
-    background: url("@{img}devices-phone.png");
-    position: absolute;
-    bottom: -19%;
-    right: 200px;
-    width: 200px;
-    height: 411px;
+    &__headline {
+      padding: 9.5px 0;
+
+      h3 {
+      font-size: 24px;
+      line-height: 35px;
+      }
+    }
+
+    &__title {
+      padding: 13.5px 0 29.5px 0;
+
+      h2 {
+      font-size: 24px;
+      line-height: 28px;
+      }
+    }
+
+    .gadgets {
+
+      &__image-tablet {
+        max-width: 447px;
+      }
+      &__image-phone {
+        width: 136px;
+    height: 279px;
+    bottom: -15%;
+    right: 235px;
+      }
+    &__image-frame {
+      max-width: 464px;
+      max-height: 356px;
+    }
+
+    }
+
+    
   }
 }

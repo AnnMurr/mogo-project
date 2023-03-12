@@ -15,6 +15,7 @@
     overflow: hidden;
     padding: 42px 11.5px;
   }
+
   &__swiper-wrapper {
     display: flex;
     width: 100%;
@@ -24,10 +25,12 @@
   &__content {
     display: flex;
     justify-content: center;
+    padding: 0 45px;
   }
 
   &__icon {
-    &-inner {
+    &-inner,
+    &-inner-photo {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -96,20 +99,82 @@
       .transition (@prop, 0.5s, ease);
       cursor: pointer;
 
-      
-
       &.reviews__btn-left {
         background: url("@{icon}arrow-left.svg") no-repeat bottom;
+
         &:hover {
           background: url("@{icon}arrow-left-hover.svg") no-repeat bottom;
         }
       }
-      
+
       &.reviews__btn-right {
         background: url("@{icon}arrow-right.svg") no-repeat bottom;
+
         &:hover {
           background: url("@{icon}arrow-right-hover.svg") no-repeat bottom;
         }
+      }
+    }
+  }
+}
+
+@media screen and (@max1024) {
+  .reviews {
+
+    &-second {
+        background-color: @white-color;
+    }
+
+    &__icon-inner-photo {
+      width: 115px;
+      height: 115px;
+    }
+
+    &__icon-inner {
+      width: 115px;
+      height: 115px;
+
+      img {
+        width: 67px;
+        height: 67px;
+        padding: 10px;
+      }
+    }
+
+    &__block {
+      margin-left: 38px;
+    }
+
+    &__comment {
+      padding: 0px 0 9px 0;
+
+      h4 {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+
+    &__content {
+      padding: 0 88px;
+    }
+
+    &__swiper-container {
+      padding: 28px 13.5px;
+    }
+
+    &__user-name {
+      h3 {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+
+    &__buttons {
+      padding: 0 20px;
+
+      button {
+        width: 28px;
+        height: 28px;
       }
     }
   }
