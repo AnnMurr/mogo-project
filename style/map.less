@@ -5,6 +5,7 @@
     width: 100%;
     max-height: 1024px;
     background: url("@{img}map-background.jpg");
+    .background-img (@size, @repeat, @position);
 
     &::before {
       content: "";
@@ -20,6 +21,10 @@
     position: relative;
     padding: 42px 0;
     z-index: 2;
+
+    @media screen and (@max1024) {
+      padding: 28.5px 0;
+    }
   }
 
   &__content {
@@ -29,12 +34,21 @@
   &__heading {
     padding: 19.5px 0 39.5px;
 
+    @media screen and (@max1024) {
+      padding: 6.5px 0 23.5px;
+    }
+
     h2 {
       font-weight: 900;
       font-size: 36px;
       line-height: 42px;
       text-transform: uppercase;
       color: @froly-color;
+
+      @media screen and (@max1024) {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
   }
 
@@ -46,8 +60,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     &:hover {
       transform: scale(1.1, 1.1);
+    }
+  }
+
+  &__icon a img {
+    @media screen and (@max1024) {
+      width: 14.5px;
+      height: 23.5px;
     }
   }
 }

@@ -1,4 +1,6 @@
 .last-block {
+  background-color: @Alabaster-color;
+
   &__wrapper {
     padding-top: 42px;
   }
@@ -12,12 +14,103 @@
       grid-template: repeat(2, auto) / 31.7% 40.2% 23.1%;
       grid-column-gap: 30px;
       grid-row-gap: 40px;
+    }
 
-      .subscription {
-        grid-area: first-bolck;
-        &__text {
-          padding: 17.5px 0;
-          & h5 {
+    .subscription {
+      grid-area: first-bolck;
+
+      &__text {
+        padding: 17.5px 0;
+
+        & h5 {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: @Silver-Sand-color;
+        }
+      }
+
+      &__followers {
+        padding: 22px 0;
+        display: flex;
+        align-items: flex-end;
+
+        h3 {
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 30px;
+          color: @Shark-color;
+          text-transform: uppercase;
+
+          span {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+
+        h5 {
+          font-style: italic;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          color: @Shark-color;
+          text-transform: uppercase;
+          margin-left: 5px;
+        }
+      }
+
+      &__social-media {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+      }
+
+      &__social-subject {
+        padding: 4px 0;
+
+        p {
+          font-style: italic;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 15px;
+          color: @Silver-Sand-color;
+        }
+      }
+
+      &__social-icons {
+        display: flex;
+        max-width: 270px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      &__icon {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .transition (@prop, @time, @ease);
+
+        &:hover {
+          transform: scale(1.1, 1.1);
+        }
+      }
+
+      &__form {
+        padding-top: 37px;
+      }
+
+      &__form-wrap {
+        display: flex;
+
+        input {
+          width: 100%;
+          border: 1px solid @Silver-Sand-color;
+          text-align: center;
+
+          &::placeholder {
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
@@ -25,124 +118,41 @@
           }
         }
 
-        &__followers {
-          padding: 22px 0;
-          display: flex;
-          align-items: flex-end;
-
-          h3 {
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 30px;
-            color: @Shark-color;
-            text-transform: uppercase;
-            span {
-              font-weight: 700;
-              font-size: 18px;
-              line-height: 30px;
-            }
-          }
-
-          h5 {
-            font-style: italic;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
-            color: @Shark-color;
-            text-transform: uppercase;
-            margin-left: 5px;
-          }
-        }
-        &__social-media {
-          display: flex;
-          justify-content: space-between;
-          padding: 10px 0;
-        }
-
-        &__social-subject {
-          padding: 4px 0;
-          p {
-            font-style: italic;
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 15px;
-            color: @Silver-Sand-color;
-          }
-        }
-
-        &__social-icons {
-          display: flex;
-          max-width: 270px;
-          width: 100%;
-          justify-content: space-between;
-        }
-
-        &__icon {
-          width: 24px;
-          height: 24px;
+        button {
+          padding: 17px 16.5px;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 21px;
           display: flex;
           align-items: center;
           justify-content: center;
-          .transition (@prop, @time, @ease);
+          text-transform: uppercase;
+          color: @white-color;
+          background-color: @Morning-Glory-color;
+          cursor: pointer;
+          .transition (@prop, 0.5s, ease);
 
           &:hover {
-            transform: scale(1.1, 1.1);
-          }
-        }
-        &__form {
-          padding-top: 37px;
-        }
-        &__form-wrap {
-          display: flex;
-
-          input {
-            width: 100%;
-            border: 1px solid @Silver-Sand-color;
-            text-align: center;
-
-            &::placeholder {
-              font-weight: 400;
-              font-size: 18px;
-              line-height: 21px;
-              color: @Silver-Sand-color;
-            }
+            background-color: desaturate(darken(@Morning-Glory-color, 7%),
+                5%);
           }
 
-          button {
-            padding: 17px 16.5px;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 21px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-transform: uppercase;
-            color: @white-color;
-            background-color: @Morning-Glory-color;
-            cursor: pointer;
-            .transition (@prop, 0.5s, ease);
-
-            &:hover {
-              background-color: desaturate(
-                darken(@Morning-Glory-color, 7%),
-                5%
-              );
-            }
-            &:focus {
-              background-color: desaturate(
-                darken(@Morning-Glory-color, 25%),
-                35%
-              );
-            }
+          &:focus {
+            background-color: desaturate(darken(@Morning-Glory-color, 25%),
+                35%);
           }
         }
       }
     }
+
+
     &__blogs {
       .blog {
         grid-area: second-bolck;
+
         &__heading {
           padding: 36px 0;
+
           h4 {
             font-weight: 700;
             font-size: 24px;
@@ -154,11 +164,13 @@
 
         &__article {
           .transition (@prop, @time, @ease);
+
           &-wrap {
             display: flex;
             margin-bottom: 20px;
             max-height: 105px;
           }
+
           &:hover {
             transform: scale(0.9, 0.9);
           }
@@ -173,6 +185,7 @@
           max-width: 170px;
           max-height: 105px;
           width: 100%;
+
           &-inner {
             img {
               width: 100%;
@@ -205,9 +218,11 @@
         }
       }
     }
+
     &__instagram {
       .block-instagram {
         grid-area: third-bolck;
+
         &__heading {
           padding: 36px 0;
 
@@ -230,6 +245,7 @@
 
         &__link {
           padding: 38px 0;
+
           a {
             font-weight: 400;
             font-size: 13px;
@@ -246,6 +262,7 @@
         }
       }
     }
+
     &__copyright {
       grid-area: fourth-bolck;
       display: grid;
@@ -254,6 +271,7 @@
       grid-column-start: 1;
       grid-column-end: 4;
       text-align: center;
+
       &-text {
         padding: 17.5px 0;
 
@@ -264,6 +282,175 @@
           text-transform: uppercase;
           color: @Shark-color;
         }
+      }
+    }
+  }
+}
+
+@media screen and (@max1024) {
+  .last-block {
+    &__wrapper {
+      padding-top: 29px;
+    }
+
+    .footer {
+      &__wrap {
+        grid-column-gap: 20px;
+        grid-row-gap: 23px;
+        grid-template: repeat(2, auto) / 32% 40.6% 23.5%;
+      }
+
+      .subscription {
+        &__logo {
+          &-inner img {
+            height: 68px;
+          }
+        }
+
+        &__text {
+          padding: 15.5px 0;
+
+          h5 {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+
+        &__followers {
+          padding: 12px 0 7px 0;
+
+          h3 {
+            font-size: 24px;
+            line-height: 30px;
+
+            span {
+              font-size: 14px;
+              line-height: 30px;
+
+            }
+          }
+
+          h5 {
+            font-size: 14px;
+            line-height: 30px;
+          }
+        }
+
+        &__social-subject {
+          padding: 0;
+
+          p {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+
+        &__social-media {
+          padding: 6px 0;
+        }
+
+        &__social-icons {
+          max-width: 230px;
+        }
+
+        &__icon {
+          width: 16px;
+          height: 16px;
+
+          a img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+
+        &__form {
+          padding-top: 25px;
+
+          &-wrap {
+            input {
+              &::placeholder {
+                font-size: 14px;
+                line-height: 16px;
+                text-align: start;
+                padding-left: 33px;
+              }
+            }
+
+            button {
+              font-size: 14px;
+              line-height: 16px;
+              padding: 11px 33.5px;
+            }
+          }
+        }
+      }
+
+      &__blogs {
+        .blog {
+          &__heading {
+            padding: 23.5px 0;
+
+            h4 {
+              font-size: 18px;
+              line-height: 21px;
+            }
+          }
+
+          &__title {
+            padding: 7, 5px 0;
+
+            h5 {
+              font-size: 14px;
+              line-height: 16px;
+            }
+
+            &__date {
+              padding: 5px 0;
+
+              span {
+                font-size: 12px;
+                line-height: 14px;
+              }
+            }
+          }
+
+          &__image {
+            margin-right: 20px;
+            max-height: 71px;
+            max-width: 115px;
+          }
+
+          &__article-wrap {
+            max-height: 71px;
+            margin-bottom: 14px;
+          }
+        }
+      }
+
+      .footer__instagram {
+        .block-instagram {
+          &__heading {
+            padding: 23.5px 0;
+
+            h4 {
+              font-size: 18px;
+              line-height: 21px;
+            }
+          }
+
+          &__link {
+            padding: 9px 0;
+
+            a {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+
+      &__copyright-text {
+        padding: 20.5px 0;
       }
     }
   }

@@ -44,6 +44,7 @@
       justify-content: space-between;
       padding-top: 58px;
     }
+
     &__item:first-child {
       position: relative;
       display: flex;
@@ -60,6 +61,10 @@
         top: -16px;
         background: @gradient-backgroud-color;
       }
+    }
+
+    &__item:nth-child(2) {
+      margin: 0 20px;
     }
 
     &__item-user {
@@ -82,4 +87,62 @@
       }
     }
   }
+}
+
+@media screen and (@max1024) {
+  .about {
+
+    &__wrapper {
+      padding: 28px 0;
+    }
+
+    &__headline {
+      padding: 16px 0;
+
+      & h3 {
+        font-size: 24px;
+        line-height: 35px;
+      }
+    }
+
+    &__title {
+      padding: 20px 0 36px 0;
+
+
+      & h2 {
+        font-size: 24px;
+        line-height: 28px;
+      }
+    }
+
+    &__text {
+      padding: 33.5px 0;
+
+      & h5 {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .super-team {
+      &__items {
+        padding-top: 48.5px;
+      }
+
+      &__item {
+        &:first-child::after {
+          left: -7px;
+          top: -7px;
+        }
+      }
+
+      &__image {
+        img {
+          height: 283px;
+        }
+      }
+    }
+
+  }
+
 }

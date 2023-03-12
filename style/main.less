@@ -1,54 +1,51 @@
 body {
   font-family: @Raleway;
+}
 
-  .container,
-  .work__header-conteiner {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+.container,
+.work__header-conteiner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (@max1024) {
+    padding: 0 16px;
+  }
+}
+
+.divider {
+  width: 170px;
+  border-bottom: 4px solid @white-color;
+  display: block;
+  margin: 0 auto;
+
+  @media screen and (@max1024) {
+    width: 115px;
   }
 
-    button {
-      background-color: transparent;
-      padding: 0;
+  &_froly {
+    border-bottom: 4px solid @froly-color;
+
+    @media screen and (@max1024) {
+      width: 148px;
     }
+  }
 
-    .divider {
-      width: 170px;
-      border-bottom: 4px solid @white-color;
-      display: block;
-      margin: 0 auto;
+  &_small {
+    width: 70px;
+    margin: 0 56px 0 0;
 
-      &_froly {
-        border-bottom: 4px solid @froly-color;
-      }
-
-      &_small {
-        width: 70px;
-        margin: 0 56px 0 0;
-      }
-
-      &_Silver-Sand {
-        border-bottom: 1px solid @Silver-Sand-color;
-        width: 370px;
-      }
-
-      &_big {
-        width: 100%;
-      }
+    @media screen and (@max1024) {
+      margin: 0 38px 0 0;
+      width: 47.5px;
     }
+  }
 
-    .devices___background,
-    .gadgets__image-frame, 
-    .gadgets__image-phone,
-    .banner__background,
-    .clients__background,
-    .map__background,
-    .card__picture-inner img {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &_Silver-Sand {
+    border-bottom: 1px solid @Silver-Sand-color;
+  }
 
-    
+  &_big {
+    width: 100%;
+  }
 }

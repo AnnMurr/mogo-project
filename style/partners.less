@@ -3,6 +3,10 @@
 
   &__wrapper {
     padding: 42px 0;
+
+    @media screen and (@max1024) {
+      padding: 28px 1px;
+    }
   }
 
   &__items {
@@ -14,5 +18,9 @@
 
   &__item {
     max-width: 127px;
+
+    @media screen and (@max1024) {
+      max-width: 86px;
+    }
   }
 }
