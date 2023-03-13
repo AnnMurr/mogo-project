@@ -21,6 +21,10 @@
     display: flex;
     align-items: center;
 
+    @media screen and (@max768) {
+      display: none;
+    }
+
     li {
       width: 85px;
       margin: 0 14.5px;
@@ -56,6 +60,9 @@
 
   &__buttons {
     display: flex;
+    @media screen and (@max768) {
+      display: none;
+    }
   }
 
   &__btn {
@@ -78,6 +85,7 @@
 
   &__btn:first-child {
     margin: 0 35px 0 17px;
+
     @media screen and (@max1024)  {
       margin: 0 24px 0 28px;
     }
@@ -90,5 +98,16 @@
       max-width: 183px;
     }
   }
-  
+}
+
+@media screen and (@max576) {
+  .menu {
+    &__logo {
+      max-width: 134px;
+
+      a img {
+        height: 56px;
+      }
+    }
+  }
 }

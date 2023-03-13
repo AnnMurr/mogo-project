@@ -138,16 +138,35 @@
                                     <h4>Super team</h4>
                                 </div>
                             </div>
-                            <div class="super-team__image">
+                            <div class="super-team__image-first">
                                 <img src="./img/super_team_1.jpg" alt="picture">
+                            </div>
+                            <div class="super-team__image-second">
+                                <img src="./img/super-team_4.jpg" alt="picture">
                             </div>
                         </div>
                         <div class="super-team__item">
+                            <div class="super-team__item-user">
+                                <div class="super-team__icon">
+                                    <img src="./icon/person.svg" alt="person-icon">
+                                </div>
+                                <div class="super-team__text">
+                                    <h4>Super team</h4>
+                                </div>
+                            </div>
                             <div class="super-team__image">
                                 <img src="./img/super_team_2.jpg" alt="picture">
                             </div>
                         </div>
                         <div class="super-team__item">
+                            <div class="super-team__item-user">
+                                <div class="super-team__icon">
+                                    <img src="./icon/person.svg" alt="person-icon">
+                                </div>
+                                <div class="super-team__text">
+                                    <h4>Super team</h4>
+                                </div>
+                            </div>
                             <div class="super-team__image">
                                 <img src="./img/super_team_3.jpg" alt="picture">
                             </div>
@@ -341,11 +360,8 @@
                                         <img src="./img/devices-tablet.png" alt="picture">
                                     </div>
                                 </div>
-                            
-                                    <div class="gadgets__image-frame"></div>
-                              
-                                    <div class="gadgets__image-phone"></div>
-                          
+                                <div class="gadgets__image-frame"></div>
+                                <div class="gadgets__image-phone"></div>
                             </div>
                         </div>
                     </div>
@@ -372,9 +388,7 @@
                 </div>
                 <div class="service__content">
                     <div class="service__image">
-                        <div class="service__image-inner">
-                            <img src="./img/servise-image.png" alt="man writes">
-                        </div>
+                        <div class="service__image-inner"></div>
                     </div>
                     <div class="accordion">
                         <div class="accordion__wrap">
@@ -542,14 +556,56 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="reviews__content swiper-slide">
+                            <div class="reviews__icon">
+                                <div class="reviews__icon-inner">
+                                    <img src="./icon/message.svg" alt="message">
+                                </div>
+                            </div>
+                            <div class="reviews__block">
+                                <div class="reviews__comment">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                                        ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
+                                        Sed amet venenatis, massa sit.</h4>
+                                </div>
+                                <div class="reviews__user-data">
+                                    <div class="divider divider_froly divider_small"></div>
+                                    <div class="reviews__user-name">
+                                        <h3>Jon Doe-4</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__content swiper-slide">
+                            <div class="reviews__icon">
+                                <div class="reviews__icon-inner">
+                                    <img src="./icon/message.svg" alt="message">
+                                </div>
+                            </div>
+                            <div class="reviews__block">
+                                <div class="reviews__comment">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                                        ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
+                                        Sed amet venenatis, massa sit.</h4>
+                                </div>
+                                <div class="reviews__user-data">
+                                    <div class="divider divider_froly divider_small"></div>
+                                    <div class="reviews__user-name">
+                                        <h3>Jon Doe-5</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="reviews__buttons">
                     <button type="button" class="reviews__btn-left"></button type="button">
                     <button type="button" class="reviews__btn-right"></button type="button">
                 </div>
+                <div class="reviews__pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
-        </div>
     </section>
     <section class="team">
         <div class="container">
@@ -572,11 +628,7 @@
                     <div class="team__gallery-wrap">
                         <div class="card-person">
                             <div class="card-person__image">
-                                <div class="card-person__photo">
-                                    <div class="card-person__photo-inner">
-                                        <img src="./img/person-1.jpg" alt="man">
-                                    </div>
-                                </div>
+                                <div class="card-person__photo card-person__photo-first"></div>
                                 <div class="social-media">
                                     <ul class="social-media__icons">
                                         <li class="social-media__icon">
@@ -612,9 +664,31 @@
                             </div>
                         </div>
                         <div class="card-person">
-                            <div class="card-person__photo">
-                                <div class="card-person__photo-inner">
-                                    <img src="./img/person-2.jpg" alt="man">
+                            <div class="card-person__image">
+                                <div class="card-person__photo card-person__photo-second"></div>
+                                <div class="social-media">
+                                    <ul class="social-media__icons">
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/facebook.svg" alt="facebook">
+                                            </a>
+                                        </li>
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/twitter.svg" alt="twitter">
+                                            </a>
+                                        </li>
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/pinterest.svg" alt="pinterest">
+                                            </a>
+                                        </li>
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="card-person__data">
@@ -627,9 +701,31 @@
                             </div>
                         </div>
                         <div class="card-person">
-                            <div class="card-person__photo">
-                                <div class="card-person__photo-inner">
-                                    <img src="./img/person-3.jpg" alt="man">
+                            <div class="card-person__image">
+                                <div class="card-person__photo card-person__photo-third"></div>
+                                <div class="social-media">
+                                    <ul class="social-media__icons">
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/facebook.svg" alt="facebook">
+                                            </a>
+                                        </li>
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/twitter.svg" alt="twitter">
+                                            </a>
+                                        </li>
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/pinterest.svg" alt="pinterest">
+                                            </a>
+                                        </li>
+                                        <li class="social-media__icon">
+                                            <a target="_blank" href="#">
+                                                <img src="./icon/instagram.svg" alt="instagram">
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="card-person__data">
@@ -746,76 +842,119 @@
             </div>
         </div>
     </section>
-    <section class="reviews reviews-second">
-        <div class="reviews__container">
-            <div class="reviews__wrapper">
-                <div class="reviews__swiper-container swiper-container ">
-                    <div class="reviews__swiper-wrapper swiper-wrapper">
-                        <div class="reviews__content swiper-slide">
-                            <div class="reviews__icon">
-                                <div class="reviews__icon-inner-photo">
-                                    <img class="reviews__photo" src="./img/reviews-photo.jpg" alt="message">
+    <section class="reviews-second">
+        <div class="reviews-second__container">
+            <div class="reviews-second__wrapper">
+                <div class="reviews-second__swiper-container swiper-container ">
+                    <div class="reviews-second__swiper-wrapper swiper-wrapper">
+                        <div class="reviews-second__content swiper-slide">
+                            <div class="reviews-second__icon">
+                                <div class="reviews-second__icon-inner-photo">
+                                    <img class="reviews-second__photo" src="./img/reviews-photo.jpg" alt="message">
                                 </div>
                             </div>
-                            <div class="reviews__block">
-                                <div class="reviews__comment">
+                            <div class="reviews-second__block">
+                                <div class="reviews-second__comment">
                                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
                                         ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
                                         Sed amet venenatis, massa sit.</h4>
                                 </div>
-                                <div class="reviews__user-data">
+                                <div class="reviews-second__user-data">
                                     <div class="divider divider_froly divider_small"></div>
-                                    <div class="reviews__user-name">
+                                    <div class="reviews-second__user-name">
                                         <h3>James Philips</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="reviews__content swiper-slide">
-                            <div class="reviews__icon">
-                                <div class="reviews__icon-inner-photo">
-                                    <img class="reviews__photo" src="./img/reviews-photo.jpg" alt="message">
+                        <div class="reviews-second__content swiper-slide">
+                            <div class="reviews-second__icon">
+                                <div class="reviews-second__icon-inner-photo">
+                                    <img class="reviews-second__photo" src="./img/reviews-photo.jpg" alt="message">
                                 </div>
                             </div>
-                            <div class="reviews__block">
-                                <div class="reviews__comment">
+                            <div class="reviews-second__block">
+                                <div class="reviews-second__comment">
                                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
                                         ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
                                         Sed amet venenatis, massa sit.</h4>
                                 </div>
-                                <div class="reviews__user-data">
+                                <div class="reviews-second__user-data">
                                     <div class="divider divider_froly divider_small"></div>
-                                    <div class="reviews__user-name">
+                                    <div class="reviews-second__user-name">
                                         <h3>James Philips-2</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="reviews__content swiper-slide">
-                            <div class="reviews__icon">
-                                <div class="reviews__icon-inner-photo">
-                                    <img class="reviews__photo" src="./img/reviews-photo.jpg" alt="message">
+                        <div class="reviews-second__content swiper-slide">
+                            <div class="reviews-second__icon">
+                                <div class="reviews-second__icon-inner-photo">
+                                    <img class="reviews-second__photo" src="./img/reviews-photo.jpg" alt="message">
                                 </div>
                             </div>
-                            <div class="reviews__block">
-                                <div class="reviews__comment">
+                            <div class="reviews-second__block">
+                                <div class="reviews-second__comment">
                                     <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
                                         ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
                                         Sed amet venenatis, massa sit.</h4>
                                 </div>
-                                <div class="reviews__user-data">
+                                <div class="reviews-second__user-data">
                                     <div class="divider divider_froly divider_small"></div>
-                                    <div class="reviews__user-name">
+                                    <div class="reviews-second__user-name">
                                         <h3>James Philips-3</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-second__content swiper-slide">
+                            <div class="reviews-second__icon">
+                                <div class="reviews-second__icon-inner-photo">
+                                    <img class="reviews-second__photo" src="./img/reviews-photo.jpg" alt="message">
+                                </div>
+                            </div>
+                            <div class="reviews-second__block">
+                                <div class="reviews-second__comment">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                                        ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
+                                        Sed amet venenatis, massa sit.</h4>
+                                </div>
+                                <div class="reviews-second__user-data">
+                                    <div class="divider divider_froly divider_small"></div>
+                                    <div class="reviews-second__user-name">
+                                        <h3>James Philips-4</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-second__content swiper-slide">
+                            <div class="reviews-second__icon">
+                                <div class="reviews-second__icon-inner-photo">
+                                    <img class="reviews-second__photo" src="./img/reviews-photo.jpg" alt="message">
+                                </div>
+                            </div>
+                            <div class="reviews-second__block">
+                                <div class="reviews-second__comment">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea
+                                        ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare.
+                                        Sed amet venenatis, massa sit.</h4>
+                                </div>
+                                <div class="reviews-second__user-data">
+                                    <div class="divider divider_froly divider_small"></div>
+                                    <div class="reviews-second__user-name">
+                                        <h3>James Philips-5</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="reviews__buttons">
-                    <button type="button" class="reviews__btn-left"></button type="button">
-                    <button type="button" class="reviews__btn-right"></button type="button">
+                <div class="reviews-second__buttons">
+                    <button type="button" class="reviews-second__btn-left"></button type="button">
+                    <button type="button" class="reviews-second__btn-right"></button type="button">
+                </div>
+                <div class="reviews-second__pagination">
+                    <div class="swiper-second-pagination"></div>
                 </div>
             </div>
         </div>
@@ -1191,7 +1330,6 @@
                                         <button type="submit">subscribe</button>
                                     </div>
                                 </form>
-
                             </div>
                         </div>
                         <div class="footer__blogs">
@@ -1210,7 +1348,8 @@
                                                 </div>
                                                 <div class="blog__name">
                                                     <div class="blog__title">
-                                                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                                        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                        </h5>
                                                     </div>
                                                     <div class="blog__date">
                                                         <span>jan.9.22.15</span>
@@ -1317,7 +1456,6 @@
                                 <div class="block-instagram__link">
                                     <a target="_blank" href="#">see all photos</a>
                                 </div>
-
                             </div>
                         </div>
                         <div class="footer__copyright">

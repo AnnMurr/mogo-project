@@ -23,11 +23,19 @@ body {
     width: 115px;
   }
 
+  @media screen and (@max576) {
+    width: 134px;
+  }
+
   &_froly {
     border-bottom: 4px solid @froly-color;
 
     @media screen and (@max1024) {
       width: 148px;
+    }
+
+    @media screen and (@max576) {
+      width: 134px;
     }
   }
 

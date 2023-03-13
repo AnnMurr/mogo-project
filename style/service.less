@@ -49,10 +49,8 @@
 
   &__image-inner {
     height: 484px;
-
-    & img {
-      height: 100%;
-    }
+    background: url('@{img}servise-image.png');
+    .background-img (@size, @repeat, @position)
   }
 
   .accordion {
@@ -76,6 +74,11 @@
           @media screen and (@max1024) {
             height: 108px;
             margin: 15px 19px 15px 0;
+          }
+
+          @media screen and (@max576) {
+            height: 120px;
+            margin: 8px 25px 8px 0;
           }
         }
       }
@@ -169,6 +172,7 @@
 
 
 @media screen and (@max1024) {
+
   .service {
     &__wrapper {
       padding: 86px 0 88px 0;
@@ -250,6 +254,78 @@
           line-height: 16px;
         }
       }
+    }
+  }
+}
+
+@media screen and (@max768) {
+
+  .service {
+    &__wrapper {
+      padding: 86px 0 44px 0;
+    }
+
+    &__content {
+      grid-template-columns: 70%;
+      grid-template-rows: 1fr;
+      grid-row-gap: 29px;
+      justify-content: center;
+    }
+
+    .accordion {
+      &__wrap {
+        height: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (@max576) {
+  .service {
+    &__wrapper {
+      padding: 52px 0 31px 0;
+    }
+
+    &__title {
+      padding: 19px 0 36.5px 0;
+    }
+
+    &__text {
+      padding: 17px 0 45.5px 0;
+    }
+
+    &__content {
+      grid-template-columns: 100%;
+    }
+
+    .accordion {
+      &__wrap {
+        height: 410px;
+      }
+
+      &__title {
+        padding: 30px 0;
+
+        h4 {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      &__text {
+        h5 {
+          font-size: 13px;
+          line-height: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (@max320) {
+  .service {
+    &__image-inner {
+      height: 142px;
     }
   }
 }

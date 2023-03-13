@@ -51,16 +51,16 @@
 
   .gadgets {
     position: relative;
-  
+
     &__wrap {
       padding: 15px 0;
     }
-  
+
     &__image-tablet {
       margin: 0 auto;
       max-width: 659px;
     }
-  
+
     &__image-frame {
       background: url("@{img}devices-frame.png");
       position: absolute;
@@ -73,7 +73,7 @@
       height: 100%;
       .background-img (@size, @repeat, @position);
     }
-  
+
     &__image-phone {
       background: url("@{img}devices-phone.png");
       position: absolute;
@@ -86,15 +86,13 @@
   }
 }
 
-
-
 @media screen and (@max1024) {
   .devices {
     &___background {
       padding: 28px 0 25px 0;
     }
 
-    &__header  {
+    &__header {
       padding-bottom: 42px;
     }
 
@@ -102,8 +100,8 @@
       padding: 9.5px 0;
 
       h3 {
-      font-size: 24px;
-      line-height: 35px;
+        font-size: 24px;
+        line-height: 35px;
       }
     }
 
@@ -111,29 +109,97 @@
       padding: 13.5px 0 29.5px 0;
 
       h2 {
-      font-size: 24px;
-      line-height: 28px;
+        font-size: 24px;
+        line-height: 28px;
       }
     }
 
     .gadgets {
-
       &__image-tablet {
         max-width: 447px;
       }
+
       &__image-phone {
         width: 136px;
-    height: 279px;
-    bottom: -15%;
-    right: 235px;
+        height: 279px;
+        bottom: -15%;
+        right: 235px;
       }
-    &__image-frame {
-      max-width: 464px;
-      max-height: 356px;
+
+      &__image-frame {
+        max-width: 464px;
+        max-height: 356px;
+      }
+    }
+  }
+}
+
+@media screen and (@max768) {
+
+  .devices {
+    &___background {
+      .background-img (@size, @repeat, left);
+      padding: 43px 0 20px 0;
     }
 
+    &__headline {
+      padding: 23px 0;
+
+      h3 {
+        font-size: 30px;
+        line-height: 44px;
+      }
     }
 
-    
+    &__title {
+      padding: 15.5px 0 40.5px 0;
+
+      h2 {
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+
+    .gadgets {
+      &__image-phone {
+        right: 30%;
+      }
+
+      &__wrap {
+        padding: 8px 0;
+      }
+
+      &__image {
+
+        &-frame {
+          max-width: 286px;
+          max-height: 219px;
+        }
+
+        &-tablet {
+          max-width: 274px;
+          height: 206px;
+        }
+
+        &-phone {
+          width: 85px;
+          height: 175px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (@max576) {
+
+  .devices {
+    .gadgets {
+      &__image {
+        &-phone {
+          right: 10%;
+          bottom: -21%;
+        }
+      }
+    }
   }
 }

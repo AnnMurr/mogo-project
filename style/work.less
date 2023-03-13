@@ -70,6 +70,10 @@
           height: 100%;
           position: absolute;
           background: @gradient-backgroud-color;
+
+          @media screen and (@max320) {
+            display: none;
+          }
         }
       }
 
@@ -88,6 +92,10 @@
       position: absolute;
       text-align: center;
       padding-top: 44px;
+
+      @media screen and (@max320) {
+        display: none;
+      }
     }
 
     &__box-icon {
@@ -122,6 +130,7 @@
 }
 
 @media screen and (@max1024) {
+
   .work {
     &__wrapper {
       padding: 58px 0;
@@ -145,7 +154,6 @@
     }
 
     &__title {
-
       padding: 18.5px 0 23.5px 0;
 
       h2 {
@@ -163,27 +171,27 @@
       }
     }
 
-    
-
     .gallery__wrap {
       grid-template: repeat(2, 256px) / repeat(4, 1fr);
     }
 
     .gallery__box {
       padding-top: 28px;
+
       &-icon {
         width: 28px;
         height: 28px;
       }
-  
+
       &-title {
         padding: 46px 0 0 0;
+
         h4 {
           font-size: 18px;
           line-height: 21px;
         }
       }
-  
+
       &-text {
         h5 {
           font-size: 14px;
@@ -191,9 +199,85 @@
         }
       }
     }
-
-    
   }
+}
 
-  
+@media screen and (@max768) {
+
+  .work {
+    .gallery {
+      &__wrap {
+        grid-template: auto auto 257px / auto;
+      }
+
+      &__picture {
+        &:nth-child(6) {
+          grid-column-start: span 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (@max576) {
+
+  .work {
+    &__wrapper {
+      padding: 29px 0;
+    }
+
+    &__headline {
+      padding: 5.5px 0;
+    }
+
+    &__text {
+      padding: 17px 0;
+    }
+
+    &__header {
+      padding-bottom: 0;
+    }
+
+    .gallery {
+      &__wrap {
+        grid-template: repeat(5, 210px) / repeat(2, 1fr);
+      }
+
+      &__picture {
+        &:nth-child(3) {
+          grid-row-start: 1;
+          grid-row-end: 4;
+          grid-column-start: 2;
+        }
+
+        &:nth-child(4) {
+          grid-row-start: 4;
+          grid-column-start: 1;
+        }
+
+        &:nth-child(5) {
+          grid-row-start: 2;
+        }
+
+        &:nth-child(6) {
+          grid-column-start: span 2;
+        }
+
+        &:nth-child(7) {
+          grid-row-start: 3;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (@max320) {
+
+  .work {
+    .gallery {
+      &__wrap {
+        grid-template: repeat(5, 152px) / repeat(2, 1fr);
+      }
+    }
+  }
 }

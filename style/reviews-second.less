@@ -1,4 +1,4 @@
-.reviews {
+.reviews-second {
   background-color: @Alabaster-color;
 
   &__container {
@@ -29,14 +29,12 @@
   }
 
   &__icon {
-
-    &-inner {
+    &-inner-photo {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 170px;
       height: 170px;
-      border: 2px solid @Morning-Glory-color;
 
       &-photo {
         border: none;
@@ -99,7 +97,7 @@
       .transition (@prop, 0.5s, ease);
       cursor: pointer;
 
-      &.reviews__btn-left {
+      &.reviews-second__btn-left {
         background: url("@{icon}arrow-left.svg") no-repeat bottom;
 
         &:hover {
@@ -107,7 +105,7 @@
         }
       }
 
-      &.reviews__btn-right {
+      &.reviews-second__btn-right {
         background: url("@{icon}arrow-right.svg") no-repeat bottom;
 
         &:hover {
@@ -120,7 +118,7 @@
   &__pagination {
     display: none;
 
-    .swiper-pagination {
+    .swiper-second-pagination {
       bottom: 0;
       width: 129px;
       display: flex;
@@ -128,7 +126,9 @@
       left: 0;
       right: 0;
       margin: 0 auto 28.5px auto;
+    }
 
+    .swiper-pagination {
       &-bullet {
         height: 9.5px;
         width: 9.5px;
@@ -147,8 +147,10 @@
 }
 
 @media screen and (@max1024) {
+  
+  .reviews-second {
+    background-color: @white-color;
 
-  .reviews {
     &__icon-inner-photo {
       width: 115px;
       height: 115px;
@@ -206,33 +208,36 @@
 
 @media screen and (@max576) {
 
-  .reviews {
-    &__block {
-      margin: 0;
-    }
+  .reviews-second {
 
     &__buttons {
       display: none;
     }
 
-    &__icon {
-      display: none;
+    &__block {
+      margin: 0;
     }
 
     &__content {
-      padding: 0;
+      padding: 2px 0;
+      flex-direction: column;
+      align-items: center;
     }
 
     &__swiper-container {
-      padding: 29px 0 60px 0;
+      padding: 26px 0 20px;
     }
 
     &__pagination {
       display: block;
     }
 
+    &__icon {
+      padding-bottom: 33px;
+    }
+
     &__comment {
-      padding: 5px 0 23px 0;
+      padding: 0;
 
       h4 {
         font-size: 14px;
@@ -241,7 +246,7 @@
     }
 
     &__user-name {
-      padding: 7.5px 0;
+      padding: 11.5px 0;
 
       h3 {
         font-size: 18px;
