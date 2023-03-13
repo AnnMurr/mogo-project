@@ -16,101 +16,14 @@
       grid-row-gap: 40px;
     }
 
-    .subscription {
-      grid-area: first-bolck;
+    &__subscription {
+      .subscription {
+        grid-area: first-bolck;
 
-      &__text {
-        padding: 17.5px 0;
+        &__text {
+          padding: 17.5px 0;
 
-        & h5 {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 21px;
-          color: @Silver-Sand-color;
-        }
-      }
-
-      &__followers {
-        padding: 22px 0;
-        display: flex;
-        align-items: flex-end;
-
-        h3 {
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 30px;
-          color: @Shark-color;
-          text-transform: uppercase;
-
-          span {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 30px;
-          }
-        }
-
-        h5 {
-          font-style: italic;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 30px;
-          color: @Shark-color;
-          text-transform: uppercase;
-          margin-left: 5px;
-        }
-      }
-
-      &__social-media {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 0;
-      }
-
-      &__social-subject {
-        padding: 4px 0;
-
-        p {
-          font-style: italic;
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 15px;
-          color: @Silver-Sand-color;
-        }
-      }
-
-      &__social-icons {
-        display: flex;
-        max-width: 270px;
-        width: 100%;
-        justify-content: space-between;
-      }
-
-      &__icon {
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .transition (@prop, @time, @ease);
-
-        &:hover {
-          transform: scale(1.1, 1.1);
-        }
-      }
-
-      &__form {
-        padding-top: 37px;
-      }
-
-      &__form-wrap {
-        display: flex;
-
-        input {
-          width: 100%;
-          border: 1px solid @Silver-Sand-color;
-          text-align: center;
-
-          &::placeholder {
+          & h5 {
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
@@ -118,33 +31,121 @@
           }
         }
 
-        button {
-          padding: 17px 16.5px;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 21px;
+        &__followers {
+          padding: 22px 0;
+          display: flex;
+          align-items: flex-end;
+
+          h3 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 30px;
+            color: @Shark-color;
+            text-transform: uppercase;
+
+            span {
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 30px;
+            }
+          }
+
+          h5 {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: @Shark-color;
+            text-transform: uppercase;
+            margin-left: 5px;
+          }
+        }
+
+        &__social-media {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 0;
+        }
+
+        &__social-subject {
+          padding: 4px 0;
+
+          p {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            color: @Silver-Sand-color;
+          }
+        }
+
+        &__social-icons {
+          display: flex;
+          max-width: 270px;
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        &__icon {
+          width: 24px;
+          height: 24px;
           display: flex;
           align-items: center;
           justify-content: center;
-          text-transform: uppercase;
-          color: @white-color;
-          background-color: @Morning-Glory-color;
-          cursor: pointer;
-          .transition (@prop, 0.5s, ease);
+          .transition (@prop, @time, @ease);
 
           &:hover {
-            background-color: desaturate(darken(@Morning-Glory-color, 7%),
-                5%);
+            transform: scale(1.1, 1.1);
+          }
+        }
+
+        &__form {
+          padding-top: 37px;
+        }
+
+        &__form-wrap {
+          display: flex;
+
+          input {
+            width: 100%;
+            border: 1px solid @Silver-Sand-color;
+            text-align: center;
+
+            &::placeholder {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 21px;
+              color: @Silver-Sand-color;
+            }
           }
 
-          &:focus {
-            background-color: desaturate(darken(@Morning-Glory-color, 25%),
-                35%);
+          button {
+            padding: 17px 16.5px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            color: @white-color;
+            background-color: @Morning-Glory-color;
+            cursor: pointer;
+            .transition (@prop, 0.5s, ease);
+
+            &:hover {
+              background-color: desaturate(darken(@Morning-Glory-color, 7%),
+                  5%);
+            }
+
+            &:focus {
+              background-color: desaturate(darken(@Morning-Glory-color, 25%),
+                  35%);
+            }
           }
         }
       }
     }
-
 
     &__blogs {
       .blog {
@@ -300,86 +301,87 @@
         grid-template: repeat(2, auto) / 32% 40.6% 23.5%;
       }
 
-      .subscription {
-        &__logo {
-          &-inner img {
-            height: 68px;
-          }
-        }
-
-        &__text {
-          padding: 15.5px 0;
-
-          h5 {
-            font-size: 14px;
-            line-height: 16px;
-          }
-        }
-
-        &__followers {
-          padding: 12px 0 7px 0;
-
-          h3 {
-            font-size: 24px;
-            line-height: 30px;
-
-            span {
-              font-size: 14px;
-              line-height: 30px;
-
+      &__subscription {
+        .subscription {
+          &__logo {
+            &-inner img {
+              height: 68px;
             }
           }
 
-          h5 {
-            font-size: 14px;
-            line-height: 30px;
+          &__text {
+            padding: 15.5px 0;
+
+            h5 {
+              font-size: 14px;
+              line-height: 16px;
+            }
           }
-        }
 
-        &__social-subject {
-          padding: 0;
+          &__followers {
+            padding: 12px 0 7px 0;
 
-          p {
-            font-size: 12px;
-            line-height: 14px;
-          }
-        }
+            h3 {
+              font-size: 24px;
+              line-height: 30px;
 
-        &__social-media {
-          padding: 6px 0;
-        }
-
-        &__social-icons {
-          max-width: 230px;
-        }
-
-        &__icon {
-          width: 16px;
-          height: 16px;
-
-          a img {
-            width: 12px;
-            height: 12px;
-          }
-        }
-
-        &__form {
-          padding-top: 25px;
-
-          &-wrap {
-            input {
-              &::placeholder {
+              span {
                 font-size: 14px;
-                line-height: 16px;
-                text-align: start;
-                padding-left: 33px;
+                line-height: 30px;
               }
             }
 
-            button {
+            h5 {
               font-size: 14px;
-              line-height: 16px;
-              padding: 11px 33.5px;
+              line-height: 30px;
+            }
+          }
+
+          &__social-subject {
+            padding: 0;
+
+            p {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+
+          &__social-media {
+            padding: 6px 0;
+          }
+
+          &__social-icons {
+            max-width: 230px;
+          }
+
+          &__icon {
+            width: 16px;
+            height: 16px;
+
+            a img {
+              width: 12px;
+              height: 12px;
+            }
+          }
+
+          &__form {
+            padding-top: 25px;
+
+            &-wrap {
+              input {
+                &::placeholder {
+                  font-size: 14px;
+                  line-height: 16px;
+                  text-align: start;
+                  padding-left: 33px;
+                }
+              }
+
+              button {
+                font-size: 14px;
+                line-height: 16px;
+                padding: 11px 33.5px;
+              }
             }
           }
         }
@@ -397,7 +399,7 @@
           }
 
           &__title {
-            padding: 7, 5px 0;
+            padding: 7px 0 5px 0;
 
             h5 {
               font-size: 14px;
@@ -427,7 +429,7 @@
         }
       }
 
-      .footer__instagram {
+      &__instagram {
         .block-instagram {
           &__heading {
             padding: 23.5px 0;
@@ -451,6 +453,203 @@
 
       &__copyright-text {
         padding: 20.5px 0;
+      }
+    }
+  }
+}
+
+@media screen and (@max924) {
+
+  .last-block {
+    .footer {
+      &__wrap {
+        grid-template: auto / 40%;
+        grid-template-areas:
+          "first-bolck  third-bolck  third-bolck"
+          "second-bolck second-bolck second-bolck"
+          "fourth-bolck fourth-bolck fourth-bolck";
+      }
+
+      &__blogs {
+        grid-row-start: 3;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      &__copyright {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      &__instagram {
+        grid-column-start: 3;
+        grid-column-end: 3;
+      }
+
+      &__subscription {
+        .subscription {
+          &__form-wrap {
+            button {
+              padding: 11px 11.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (@max576) {
+
+  .last-block {
+    .footer {
+      &__wrap {
+        grid-template: auto / auto;
+        grid-template-areas:
+          "first-bolck first-bolck first-bolck"
+          "second-bolck second-bolck second-bolck"
+          "third-bolck third-bolck third-bolck"
+          "fourth-bolck fourth-bolck fourth-bolck";
+        grid-row-gap: 0;
+        grid-column-gap: 0;
+      }
+
+      &__blogs {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+
+        .blog {
+          &__title {
+            padding: 0;
+          }
+
+          &__date {
+            padding: 0;
+          }
+        }
+      }
+
+      &__instagram {
+        grid-row-start: 3;
+        grid-column-start: 1;
+      }
+
+      &__copyright {
+        grid-row-start: 4;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      &__subscription {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (@max320) {
+  .last-block {
+    .footer {
+      &__wrap {
+        grid-template: auto / auto;
+        grid-template-areas:
+          "first-bolck first-bolck first-bolck"
+          "second-bolck second-bolck second-bolck"
+          "third-bolck third-bolck third-bolck"
+          "fourth-bolck fourth-bolck fourth-bolck";
+        grid-row-gap: 0;
+      }
+
+      &__blogs {
+        .blog {
+          &__heading {
+            text-align: center;
+          }
+
+          &__image {
+            max-width: 83px;
+            margin-right: 14px;
+
+            &-inner {
+              height: 71px;
+            }
+          }
+        }
+      }
+
+      &__copyright {
+        &-text {
+          padding: 8.5px 0;
+        }
+      }
+
+      &__instagram {
+        .block-instagram {
+          &__heading {
+            text-align: center;
+          }
+
+          &__gallery {
+            max-width: 100%;
+            max-height: 290px;
+          }
+
+          &__image-inner img {
+            width: 100%;
+            height: 100%;
+          }
+
+          &__link {
+            padding: 31px 0;
+            text-align: center;
+          }
+        }
+      }
+
+      &__subscription {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .subscription {
+          &__logo {
+            display: flex;
+            justify-content: end;
+          }
+
+          &__text {
+            padding: 8.5px 0;
+          }
+
+          &__followers {
+            padding: 10px 0 7px 0;
+            display: flex;
+            justify-content: center;
+          }
+
+          &__social-icons {
+            max-width: 205px;
+          }
+
+          &__form-wrap {
+            flex-direction: column;
+
+            input {
+              height: 37px;
+              margin-bottom: 24px;
+            }
+          }
+        }
       }
     }
   }

@@ -8,6 +8,11 @@
 
   &__wrapper {
     display: flex;
+
+    @media screen and (@max768) {
+      flex-wrap: wrap;
+      justify-content: center
+    }
   }
 
   &__item {
@@ -24,9 +29,26 @@
       height: 168px;
     }
 
+    @media screen and (@max768) {
+      border-bottom: 1px solid @white-color;
+      width: 144px;
+      height: 125px;
+    }
+
+    &:last-child {
+      @media screen and (@max768) {
+        border:none;
+      }
+    }
+
     &:nth-child(odd) {
       border-left: 1px solid @white-color;
       border-right: 1px solid @white-color;
+
+      @media screen and (@max768) {
+      border-left: none;
+      border-right: none;
+      }
     }
 
     .futures__title {

@@ -4,7 +4,6 @@
     position: relative;
     top: 0;
     width: 100%;
-    max-height: 1024px;
     background: url("@{img}desktop.png");
     .background-img (@size, @repeat, @position);
 
@@ -59,11 +58,9 @@
       white-space: pre-line;
 
       @media screen and (@max1024) {
-      font-size: 96px;
-      line-height: 117px;
+        font-size: 96px;
+        line-height: 117px;
       }
-
-      
     }
   }
 
@@ -99,6 +96,7 @@
       outline: none;
     }
   }
+
   .scroll {
     position: sticky;
     top: 0;
@@ -180,6 +178,46 @@
           line-height: 16px;
           padding: 0 0 3px 5px;
         }
+      }
+    }
+  }
+}
+
+@media screen and (@max576) {
+
+  .banner {
+    &__background {
+      padding: 90px 0 42px 0;
+    }
+
+    &__headline {
+      h2 {
+        font-size: 36px;
+        line-height: 52px;
+      }
+    }
+
+    &__heading {
+      padding: 51.5px 0 58.5px 0;
+
+      h1 {
+        font-size: 48px;
+        line-height: 59px;
+      }
+    }
+
+    &__button-btn {
+      padding: 13px 0;
+      width: 100%;
+    }
+
+    .scroll {
+      &__text {
+        display: none;
+      }
+
+      &__wrapper {
+        padding-top: 50px;
       }
     }
   }

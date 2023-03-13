@@ -48,6 +48,10 @@
           max-height: 253px;
           width: 100%;
           .background-img (@size, @repeat, @position);
+
+          @media screen and (@max320) {
+            height: 214px;
+          }
         }
       }
 
@@ -131,6 +135,23 @@
         top: 30%;
         left: -4%;
 
+        @media screen and (@max1024) {
+          top: 20%
+        }
+
+        @media screen and (@max924) {
+          top: 20%
+        }
+
+        @media screen and (@max768) {
+          top: 10%
+        }
+
+        @media screen and (@max320) {
+          left: 0;
+          top: 29%;
+        }
+
         &__wrap {
           background-color: @Morning-Glory-color;
           width: 80px;
@@ -166,6 +187,7 @@
 }
 
 @media screen and (@max1024) {
+
   .stories {
     &__wrapper {
       padding: 58px 0;
@@ -221,8 +243,6 @@
         }
 
         .post-date {
-          left: -3px;
-
           &__wrap {
             width: 68px;
             height: 68px;
@@ -254,6 +274,30 @@
           height: 27px;
         }
       }
+    }
+  }
+}
+
+@media screen and (@max576) {
+
+  .stories {
+    &__cards {
+      grid-template: repeat(3, 1fr) / 1fr;
+      grid-row-gap: 29px;
+
+      .card {
+        &__description {
+          padding: 26px 0 19px 0;
+        }
+
+        &__text {
+          padding: 12.5px 0;
+        }
+      }
+    }
+
+    &__wrapper {
+      padding: 29px 0;
     }
   }
 }
