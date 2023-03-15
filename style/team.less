@@ -47,6 +47,45 @@
     justify-content: space-between;
   }
 
+  .social-media {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    .transition (@prop, 0.5s, ease);
+
+    &__icons {
+      display: flex;
+    }
+
+    &__icon {
+      &:first-child {
+        background-color: @froly-color;
+        margin: 0;
+      }
+
+      width: 42px;
+      height: 42px;
+      background-color: @Citrine-White-color;
+      margin-left: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      a {
+        .transition (@prop, @time, @ease);
+
+        &:hover {
+          transform: scale(1.1, 1.1);
+
+          @media screen and (@max768) {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+
   .card-person {
     text-align: center;
     max-width: 371px;
@@ -59,6 +98,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      .transition (@prop, @time, @ease);
+      cursor: pointer;
+
+      &:hover {
+        @media screen and (@min924) {
+          .social-media {
+            display: block;
+          }
+
+          &:hover {
+            &::after {
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: -16px;
+              top: -16px;
+              background: @gradient-backgroud-color;
+
+              @media screen and (@max1024) {
+                left: -3px;
+                top: -5px;
+              }
+            }
+          }
+        }
+      }
     }
 
     &__photo {
@@ -90,66 +156,8 @@
       }
     }
 
-    .social-media {
-      position: absolute;
-      display: none;
-
-      &__icons {
-        display: flex;
-      }
-
-      &__icon {
-        &:first-child {
-          background-color: @froly-color;
-          margin: 0;
-        }
-
-        width: 42px;
-        height: 42px;
-        background-color: @Citrine-White-color;
-        margin-left: 1px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        a {
-          .transition (@prop, @time, @ease);
-
-          &:hover {
-            transform: scale(1.1, 1.1);
-          }
-        }
-      }
-    }
-
-    &:first-child {
-      .social-media {
-        display: block;
-      }
-    }
-
     &:nth-child(2) {
       margin: 0 20px;
-    }
-
-    &:first-child {
-      .card-person__photo {
-        &::after {
-          content: "";
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          left: -16px;
-          top: -16px;
-          background: @gradient-backgroud-color;
-
-          @media screen and (@max1024) {
-            left: -3px;
-            top: -5px;
-          }
-        }
-      }
     }
 
     &__name {

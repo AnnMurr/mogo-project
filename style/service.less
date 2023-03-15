@@ -68,7 +68,7 @@
         }
 
         .accordion__content {
-          height: 127px;
+          height: 125px;
           margin: 18px 24px 18px 0;
 
           @media screen and (@max1024) {
@@ -93,6 +93,10 @@
 
       &:hover {
         background-color: @Wild-Sand-color;
+
+        @media screen and (@max768) {
+          background-color: transparent;
+        }
       }
     }
 
